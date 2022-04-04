@@ -73,7 +73,7 @@
 		white-space: nowrap;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: About___Start_Flow3.html;
+		--web-action-target: home/About___Start_Flow3.html;
 		cursor: pointer;
 		line-height: 25px;
 		margin-top: -4.5px;
@@ -202,7 +202,7 @@
 		transition: all 0.30000001192092896s snap;
 		--web-animation: fadein 0.30000001192092896s snap;
 		--web-action-type: page;
-		--web-action-target: Retrieve___Options___Flow3.html;
+		--web-action-target: retrieve/Retrieve___Options___Flow3.html;
 		cursor: pointer;
 	}
 	#METADATA_cb {
@@ -317,7 +317,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Anemone_Start___Flow3.html;
+		--web-action-target: home/Anemone_Start___Flow3.html;
 		cursor: pointer;
 	}
 	#METADATA_ch {
@@ -405,7 +405,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: User___Flow3.html;
+		--web-action-target: auth/User___Flow3.html;
 		cursor: pointer;
 	}
 	#METADATA_co {
@@ -545,7 +545,7 @@
 		top: 225px;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: search_bar_view___flow3.html;
+		--web-action-target: retrieve/search_bar_view___flow3.html;
 		cursor: pointer;
 	}
 	#Search {
@@ -637,7 +637,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Annotate_Appendage___Flow3.html;
+		--web-action-target: home/Annotate_Appendage___Flow3.html;
 		cursor: pointer;
 	}
 	#Path_2 {
@@ -673,7 +673,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Anemone_Features___Flow3.html;
+		--web-action-target: home/Anemone_Features___Flow3.html;
 		cursor: pointer;
 	}
 	#Anemone_03_c {
@@ -1507,7 +1507,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -3075,7 +3075,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 

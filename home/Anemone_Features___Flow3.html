@@ -86,7 +86,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Anemone_Start___Flow3.html;
+		--web-action-target: home/Anemone_Start___Flow3.html;
 		cursor: pointer;
 	}
 	#Anemone_03_b {
@@ -107,7 +107,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Collect___Flow3.html;
+		--web-action-target: collect/Collect___Flow3.html;
 		cursor: pointer;
 	}
 	#icon_organize {
@@ -119,7 +119,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Organize___Flow3.html;
+		--web-action-target: organize/Organize___Flow3.html;
 		cursor: pointer;
 	}
 	#icon_organize_b {
@@ -139,7 +139,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Modify___Flow3.html;
+		--web-action-target: modify/Modify___Flow3.html;
 		cursor: pointer;
 	}
 	#icon_modify_b {
@@ -159,7 +159,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Retrieve___Flow3.html;
+		--web-action-target: retrieve/Retrieve___Flow3.html;
 		cursor: pointer;
 	}
 	#icon_retrieve_b {
@@ -179,7 +179,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Settings___Flow3.html;
+		--web-action-target: auth/Settings___Flow3.html;
 		cursor: pointer;
 	}
 	#login_03 {
@@ -191,7 +191,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: User_Registration___Flow3.html;
+		--web-action-target: auth/User_Registration___Flow3.html;
 		cursor: pointer;
 	}
 	#Retrieve {
@@ -1072,7 +1072,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -2640,7 +2640,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 

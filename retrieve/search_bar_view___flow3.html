@@ -39,7 +39,7 @@
 		overflow: hidden;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Search___Flow3.html;
+		--web-action-target: retrieve/Search___Flow3.html;
 		cursor: pointer;
 		--web-view-name: search bar view – flow3;
 		--web-view-id: search_bar_view__flow3;
@@ -55,7 +55,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Retrieve_Search_Results.html;
+		--web-action-target: retrive/Retrieve_Search_Results.html;
 		cursor: pointer;
 	}
 	#Input {
@@ -596,7 +596,7 @@
 		height: 26px;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Search___Flow3.html;
+		--web-action-target: retrieve/Search___Flow3.html;
 		cursor: pointer;
 		text-align: center;
 		font-family: Segoe UI;
@@ -1427,7 +1427,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -2995,7 +2995,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 

@@ -216,7 +216,7 @@
 		transition: all 0.30000001192092896s wind-up;
 		--web-animation: fadein 0.30000001192092896s wind-up;
 		--web-action-type: page;
-		--web-action-target: Organize___Flow3.html;
+		--web-action-target: organize/Organize___Flow3.html;
 		cursor: pointer;
 	}
 </style>
@@ -1041,7 +1041,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -2609,7 +2609,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 

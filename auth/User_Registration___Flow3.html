@@ -155,7 +155,7 @@
 		top: 496px;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Verify_Email___Flow3.html;
+		--web-action-target: auth/Verify_Email___Flow3.html;
 		cursor: pointer;
 	}
 	#Rectangle_15 {
@@ -1068,7 +1068,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -2636,7 +2636,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 

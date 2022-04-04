@@ -164,7 +164,7 @@
 		transition: all 0.30000001192092896s linear;
 		--web-animation: fadein 0.30000001192092896s linear;
 		--web-action-type: page;
-		--web-action-target: Modify___Options___Flow3.html;
+		--web-action-target: modify/Modify___Options___Flow3.html;
 		cursor: pointer;
 		text-align: center;
 		font-family: Helvetica Neue;
@@ -197,7 +197,7 @@
 		transition: all 0.30000001192092896s wind-up;
 		--web-animation: fadein 0.30000001192092896s wind-up;
 		--web-action-type: page;
-		--web-action-target: Search___Flow3.html;
+		--web-action-target: retrieve/Search___Flow3.html;
 		cursor: pointer;
 	}
 </style>
@@ -1022,7 +1022,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -2590,7 +2590,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 

@@ -116,7 +116,7 @@
 		top: 320px;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Organize___Options_Flow3.html;
+		--web-action-target: organize/Organize___Options_Flow3.html;
 		cursor: pointer;
 	}
 	#Rectangle_21 {
@@ -137,7 +137,7 @@
 		top: 528px;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Detach_Retrieve_Search_Results.html;
+		--web-action-target: retrieve/Detach_Retrieve_Search_Results.html;
 		cursor: pointer;
 	}
 	#n_____________________________ {
@@ -178,7 +178,7 @@
 		transition: all 0.30000001192092896s snap;
 		--web-animation: fadein 0.30000001192092896s snap;
 		--web-action-type: page;
-		--web-action-target: Retrieve___Options___Flow3.html;
+		--web-action-target: retrieve/Retrieve___Options___Flow3.html;
 		cursor: pointer;
 	}
 </style>
@@ -1003,7 +1003,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -2571,7 +2571,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 

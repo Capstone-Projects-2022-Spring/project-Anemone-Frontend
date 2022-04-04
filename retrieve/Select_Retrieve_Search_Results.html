@@ -92,7 +92,7 @@
 		transition: all 0.30000001192092896s snap;
 		--web-animation: fadein 0.30000001192092896s snap;
 		--web-action-type: page;
-		--web-action-target: Confirm_Delete___Flow3.html;
+		--web-action-target: retrieve/Confirm_Delete___Flow3.html;
 		cursor: pointer;
 	}
 	#n_________Delete {
@@ -1236,7 +1236,7 @@
 		transition: all 0.30000001192092896s snap;
 		--web-animation: fadein 0.30000001192092896s snap;
 		--web-action-type: page;
-		--web-action-target: Retrieve___Options___Flow3.html;
+		--web-action-target: retrieve/Retrieve___Options___Flow3.html;
 		cursor: pointer;
 	}
 	#Anemone_03 {
@@ -1248,7 +1248,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Anemone_Features___Flow3.html;
+		--web-action-target: home/Anemone_Features___Flow3.html;
 		cursor: pointer;
 	}
 	#Anemone_03_em {
@@ -2082,7 +2082,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -3650,7 +3650,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 

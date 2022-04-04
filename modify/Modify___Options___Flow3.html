@@ -92,7 +92,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Anemone_Features___Flow3.html;
+		--web-action-target: home/Anemone_Features___Flow3.html;
 		cursor: pointer;
 	}
 	#x_close_b {
@@ -112,7 +112,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Anemone_Start___Flow3.html;
+		--web-action-target: home/Anemone_Start___Flow3.html;
 		cursor: pointer;
 	}
 	#Anemone_03_b {
@@ -133,7 +133,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Anemone_Features___Flow3.html;
+		--web-action-target: home/Anemone_Features___Flow3.html;
 		cursor: pointer;
 	}
 	#x_close_cb {
@@ -153,7 +153,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Modify___Options___Link___Flow3.html;
+		--web-action-target: modify/Modify___Options___Link___Flow3.html;
 		cursor: pointer;
 	}
 	#fileOps_08 {
@@ -166,7 +166,7 @@
 		transition: all 0.30000001192092896s snap;
 		--web-animation: fadein 0.30000001192092896s snap;
 		--web-action-type: page;
-		--web-action-target: Organize___Flow3.html;
+		--web-action-target: organize/Organize___Flow3.html;
 		cursor: pointer;
 	}
 	#fileOps_04 {
@@ -179,7 +179,7 @@
 		transition: all 0.30000001192092896s wind-up;
 		--web-animation: fadein 0.30000001192092896s wind-up;
 		--web-action-type: page;
-		--web-action-target: Annotate_Appendage___Flow3.html;
+		--web-action-target: modify/Annotate_Appendage___Flow3.html;
 		cursor: pointer;
 	}
 	#fileOps_12 {
@@ -192,7 +192,7 @@
 		transition: all 0.30000001192092896s wind-up;
 		--web-animation: fadein 0.30000001192092896s wind-up;
 		--web-action-type: page;
-		--web-action-target: Search___Flow3.html;
+		--web-action-target: retrieve/Search___Flow3.html;
 		cursor: pointer;
 	}
 	#Annotate {
@@ -219,7 +219,7 @@
 		transition: all 0.30000001192092896s linear;
 		--web-animation: fadein 0.30000001192092896s linear;
 		--web-action-type: page;
-		--web-action-target: Modify___Options___Link___Flow3.html;
+		--web-action-target: modify/Modify___Options___Link___Flow3.html;
 		cursor: pointer;
 		text-align: center;
 		font-family: Segoe UI;
@@ -1078,7 +1078,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -2646,7 +2646,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 

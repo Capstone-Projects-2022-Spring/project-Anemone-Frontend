@@ -77,7 +77,7 @@
 		transition: all 0.30000001192092896s linear;
 		--web-animation: fadein 0.30000001192092896s linear;
 		--web-action-type: page;
-		--web-action-target: Retrieve___Options___Flow3.html;
+		--web-action-target: retrieve/Retrieve___Options___Flow3.html;
 		cursor: pointer;
 	}
 	#icon_retrieve_bz {
@@ -97,7 +97,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Anemone_Features___Flow3.html;
+		--web-action-target: home/Anemone_Features___Flow3.html;
 		cursor: pointer;
 	}
 	#x_close_b {
@@ -117,7 +117,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Anemone_Start___Flow3.html;
+		--web-action-target: home/Anemone_Start___Flow3.html;
 		cursor: pointer;
 	}
 	#Anemone_03_b {
@@ -951,7 +951,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -2519,7 +2519,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 

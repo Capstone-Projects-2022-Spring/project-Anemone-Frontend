@@ -83,7 +83,7 @@
 		transition: all 0.30000001192092896s snap;
 		--web-animation: fadein 0.30000001192092896s snap;
 		--web-action-type: page;
-		--web-action-target: Projects_Main.html;
+		--web-action-target: organize/Projects_Main.html;
 		cursor: pointer;
 		text-align: center;
 		font-family: Arial;
@@ -102,7 +102,7 @@
 		transition: all 0.30000001192092896s snap;
 		--web-animation: fadein 0.30000001192092896s snap;
 		--web-action-type: page;
-		--web-action-target: Retrieve_Search_Results.html;
+		--web-action-target: retrieve/Retrieve_Search_Results.html;
 		cursor: pointer;
 		text-align: center;
 		font-family: Arial;
@@ -135,7 +135,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: User___Flow3.html;
+		--web-action-target: auth/User___Flow3.html;
 		cursor: pointer;
 	}
 	#METADATA {
@@ -161,7 +161,7 @@
 		white-space: nowrap;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: About___Start_Flow3.html;
+		--web-action-target: ./About___Start_Flow3.html;
 		cursor: pointer;
 		line-height: 25px;
 		margin-top: -4.5px;
@@ -1469,7 +1469,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -3037,7 +3037,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 

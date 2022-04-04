@@ -174,7 +174,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Artboard_Anemone_Features___Flow3_LOGGED_IN.html;
+		--web-action-target: auth/Artboard_Anemone_Features___Flow3_LOGGED_IN.html;
 		cursor: pointer;
 	}
 	#x_close_b {
@@ -1171,7 +1171,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -2739,7 +2739,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
