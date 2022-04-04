@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anemone Features - Flow3</title>
+<title>Organize – Flow3</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Anemone Features - Flow3;
-		--web-view-id: Anemone_Features_-_Flow3;
+		--web-view-name: Organize – Flow3;
+		--web-view-id: Organize__Flow3;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Anemone_Features_-_Flow3;
+		--web-view-ids: Organize__Flow3;
 	}
 	* {
 		margin: 0;
@@ -21,14 +21,14 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Anemone_Features_-_Flow3 {
+	#Organize__Flow3 {
 		position: absolute;
 		width: 768px;
 		height: 1024px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: Anemone Features - Flow3;
-		--web-view-id: Anemone_Features_-_Flow3;
+		--web-view-name: Organize – Flow3;
+		--web-view-id: Organize__Flow3;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
@@ -67,22 +67,53 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Anemone_Features {
-		opacity: 0.94;
+	#icon_organize {
 		position: absolute;
-		width: 322px;
-		height: 256px;
-		left: 413px;
-		top: 738px;
+		width: 90px;
+		height: 90px;
+		left: 448px;
+		top: 796px;
+		overflow: visible;
+		transition: all 0.30000001192092896s wind-up;
+		--web-animation: fadein 0.30000001192092896s wind-up;
+		--web-action-type: page;
+		--web-action-target: Organize___Options_Flow3.html;
+		cursor: pointer;
+	}
+	#icon_organize_bz {
+		position: absolute;
+		width: 90px;
+		height: 90px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#x_close {
+		position: absolute;
+		width: 28px;
+		height: 28px;
+		left: 510px;
+		top: 782px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-in-out;
+		--web-action-type: page;
+		--web-action-target: Anemone_Features___Flow3.html;
+		cursor: pointer;
+	}
+	#x_close_b {
+		position: absolute;
+		width: 28px;
+		height: 28px;
+		left: 0px;
+		top: 0px;
 		overflow: visible;
 	}
 	#Anemone_03 {
-		opacity: 0.97;
 		position: absolute;
 		width: 162px;
 		height: 137px;
-		left: 101px;
-		top: 100px;
+		left: 538px;
+		top: 841px;
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
@@ -97,158 +128,6 @@
 		left: 0px;
 		top: 0px;
 		overflow: visible;
-	}
-	#icon_collect {
-		position: absolute;
-		width: 90px;
-		height: 90px;
-		left: 0px;
-		top: 166px;
-		overflow: visible;
-		--web-animation: fadein 0.30000001192092896s ease-in-out;
-		--web-action-type: page;
-		--web-action-target: Collect___Flow3.html;
-		cursor: pointer;
-	}
-	#icon_organize {
-		position: absolute;
-		width: 90px;
-		height: 90px;
-		left: 27px;
-		top: 60px;
-		overflow: visible;
-		--web-animation: fadein 0.30000001192092896s ease-in-out;
-		--web-action-type: page;
-		--web-action-target: Organize___Flow3.html;
-		cursor: pointer;
-	}
-	#icon_organize_b {
-		position: absolute;
-		width: 90px;
-		height: 90px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#icon_modify {
-		position: absolute;
-		width: 90px;
-		height: 90px;
-		left: 122px;
-		top: 0px;
-		overflow: visible;
-		--web-animation: fadein 0.30000001192092896s ease-in-out;
-		--web-action-type: page;
-		--web-action-target: Modify___Flow3.html;
-		cursor: pointer;
-	}
-	#icon_modify_b {
-		position: absolute;
-		width: 90px;
-		height: 90px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#icon_retrieve {
-		position: absolute;
-		width: 90px;
-		height: 90px;
-		left: 232px;
-		top: 10px;
-		overflow: visible;
-		--web-animation: fadein 0.30000001192092896s ease-in-out;
-		--web-action-type: page;
-		--web-action-target: Retrieve___Flow3.html;
-		cursor: pointer;
-	}
-	#icon_retrieve_b {
-		position: absolute;
-		width: 90px;
-		height: 90px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#setting_o {
-		position: absolute;
-		width: 28px;
-		height: 28px;
-		left: 662px;
-		top: 918px;
-		overflow: visible;
-		--web-animation: fadein 0.30000001192092896s ease-in-out;
-		--web-action-type: page;
-		--web-action-target: Settings___Flow3.html;
-		cursor: pointer;
-	}
-	#login_03 {
-		position: absolute;
-		width: 38px;
-		height: 34px;
-		left: 638px;
-		top: 946px;
-		overflow: visible;
-		--web-animation: fadein 0.30000001192092896s ease-in-out;
-		--web-action-type: page;
-		--web-action-target: User_Registration___Flow3.html;
-		cursor: pointer;
-	}
-	#Retrieve {
-		left: 621px;
-		top: 700px;
-		position: absolute;
-		overflow: visible;
-		width: 70px;
-		height: 14px;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: italic;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(27,40,226,1);
-	}
-	#Modify {
-		left: 486px;
-		top: 719px;
-		position: absolute;
-		overflow: visible;
-		width: 70px;
-		height: 14px;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: italic;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(27,40,226,1);
-	}
-	#Organize {
-		left: 384px;
-		top: 786px;
-		position: absolute;
-		overflow: visible;
-		width: 70px;
-		height: 14px;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: italic;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(27,40,226,1);
-	}
-	#Collect {
-		left: 350px;
-		top: 899px;
-		position: absolute;
-		overflow: visible;
-		width: 70px;
-		height: 14px;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: italic;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(27,40,226,1);
 	}
 </style>
 <script id="applicationScript">
@@ -3163,7 +3042,7 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Anemone_Features_-_Flow3">
+<div id="Organize__Flow3">
 	<svg class="Artwork_1" viewBox="-739.5 -427 1479 854">
 		</null>
 	</svg>
@@ -3181,41 +3060,17 @@ window.application = new Application();
 			<rect id="Rectangle_27_bx" rx="0" ry="0" x="0" y="0" width="1479" height="854">
 			</rect>
 		</svg>
-	<div id="Anemone_Features" class="Anemone_Features">
-		<div onclick="application.goToTargetView(event)" id="Anemone_03" class="Anemone_03">
-			<img id="Anemone_03_b" src="Anemone_03_b.png" srcset="Anemone_03_b.png 1x, Anemone_03_b@2x.png 2x">
-				
-		</div>
-		<img onclick="application.goToTargetView(event)" id="icon_collect" src="icon_collect.png" srcset="icon_collect.png 1x, icon_collect@2x.png 2x">
+	<div onclick="application.goToTargetView(event)" id="icon_organize" class="icon_organize">
+		<img id="icon_organize_bz" src="../image/icon_organize_bz.png" srcset="../image/icon_organize_bz.png 1x, ../image/icon_organize_bz@2x.png 2x">
 			
-		<div onclick="application.goToTargetView(event)" id="icon_organize" class="icon_organize">
-			<img id="icon_organize_b" src="icon_organize_b.png" srcset="icon_organize_b.png 1x, icon_organize_b@2x.png 2x">
-				
-		</div>
-		<div onclick="application.goToTargetView(event)" id="icon_modify" class="icon_modify">
-			<img id="icon_modify_b" src="icon_modify_b.png" srcset="icon_modify_b.png 1x, icon_modify_b@2x.png 2x">
-				
-		</div>
-		<div onclick="application.goToTargetView(event)" id="icon_retrieve" class="icon_retrieve">
-			<img id="icon_retrieve_b" src="icon_retrieve_b.png" srcset="icon_retrieve_b.png 1x, icon_retrieve_b@2x.png 2x">
-				
-		</div>
 	</div>
-	<img onclick="application.goToTargetView(event)" id="setting_o" src="setting_o.png" srcset="setting_o.png 1x, setting_o@2x.png 2x">
-		
-	<img onclick="application.goToTargetView(event)" id="login_03" src="login_03.png" srcset="login_03.png 1x, login_03@2x.png 2x">
-		
-	<div id="Retrieve">
-		<span>Retrieve</span>
+	<div onclick="application.goToTargetView(event)" id="x_close" class="x_close">
+		<img id="x_close_b" src="../image/x_close_b.png" srcset="../image/x_close_b.png 1x, ../image/x_close_b@2x.png 2x">
+			
 	</div>
-	<div id="Modify">
-		<span>Modify</span>
-	</div>
-	<div id="Organize">
-		<span>Organize</span>
-	</div>
-	<div id="Collect">
-		<span>Collect</span>
+	<div onclick="application.goToTargetView(event)" id="Anemone_03" class="Anemone_03">
+		<img id="Anemone_03_b" src="../image/Anemone_03_b.png" srcset="../image/Anemone_03_b.png 1x, ../image/Anemone_03_b@2x.png 2x">
+			
 	</div>
 </div>
 </body>
