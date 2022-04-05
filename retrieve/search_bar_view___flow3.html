@@ -4,33 +4,22 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Verify Email – Flow3</title>
+<title>search bar view – flow3</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Verify Email – Flow3;
-		--web-view-id: Verify_Email__Flow3;
+		--web-view-name: search bar view – flow3;
+		--web-view-id: search_bar_view__flow3;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Verify_Email__Flow3;
+		--web-view-ids: search_bar_view__flow3;
 	}
 	* {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
 		border: none;
-	}
-	#Verify_Email__Flow3 {
-		position: absolute;
-		width: 1366px;
-		height: 768px;
-		background-color: rgba(255,255,255,1);
-		overflow: hidden;
-		--web-view-name: Verify Email – Flow3;
-		--web-view-id: Verify_Email__Flow3;
-		--web-scale-on-resize: true;
-		--web-enable-deep-linking: true;
 	}
 	@keyframes fadein {
 	
@@ -42,180 +31,579 @@
 		}
 	
 	}
-	#Bacxckground_gradient_dark_blu {
-		fill: transparent;
-	}
-	.Bacxckground_gradient_dark_blu {
+	#search_bar_view__flow3 {
+		position: absolute;
+		width: 768px;
+		height: 1024px;
+		background-color: rgba(0,0,0,1);
 		overflow: hidden;
-		position: absolute;
-		width: 1366px;
-		height: 841.88px;
-		left: 0px;
-		top: -36.94px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Group_5 {
-		mix-blend-mode: normal;
-		position: absolute;
-		width: 1366px;
-		height: 841.88px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Rectangle_9_by {
-		fill: url(#Rectangle_9_by);
-	}
-	.Rectangle_9_by {
-		position: absolute;
-		overflow: visible;
-		width: 1366px;
-		height: 841.88px;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_16 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_16 {
-		position: absolute;
-		overflow: visible;
-		width: 850px;
-		height: 562px;
-		left: 258px;
-		top: 103px;
-	}
-	#register {
-		position: absolute;
-		width: 105px;
-		height: 78.6px;
-		left: 630.5px;
-		top: 234px;
-		overflow: visible;
-	}
-	#Rectangle_3 {
-		position: absolute;
-		width: 105px;
-		height: 78.6px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Dzie_dobry {
-		left: 560px;
-		top: 160px;
-		position: absolute;
-		overflow: visible;
-		width: 237px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 42px;
-		color: rgba(112,112,112,1);
-	}
-	#Thank_you_for_registering_with {
-		left: 327px;
-		top: 344px;
-		position: absolute;
-		overflow: visible;
-		width: 713px;
-		height: 155px;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(112,112,112,1);
-	}
-	#Rectangle_17 {
-		fill: rgba(213,73,29,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_17 {
-		position: absolute;
-		overflow: visible;
-		width: 105px;
-		height: 42px;
-		left: 631px;
-		top: 526px;
-	}
-	#Resend {
-		left: 649px;
-		top: 537px;
-		position: absolute;
-		overflow: visible;
-		width: 69px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(255,255,255,1);
-	}
-	#Rectangle_18 {
-		fill: rgba(43,78,161,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_18 {
-		position: absolute;
-		overflow: visible;
-		width: 105px;
-		height: 22px;
-		left: 631px;
-		top: 616px;
-	}
-	#Report_feedback {
-		left: 639px;
-		top: 623px;
-		position: absolute;
-		overflow: visible;
-		width: 89px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 12px;
-		color: rgba(255,255,255,1);
-	}
-	#x_close {
-		position: absolute;
-		width: 28px;
-		height: 28px;
-		left: 1061px;
-		top: 120px;
-		overflow: visible;
-		--web-animation: fadein 0.30000001192092896s ease-in-out;
+		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Verification_Email___Flow3.html;
+		--web-action-target: retrieve/Search___Flow3.html;
+		cursor: pointer;
+		--web-view-name: search bar view – flow3;
+		--web-view-id: search_bar_view__flow3;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#Search {
+		position: absolute;
+		width: 744px;
+		height: 452px;
+		left: 16px;
+		top: 84px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: retrive/Retrieve_Search_Results.html;
 		cursor: pointer;
 	}
-	#x_close_b {
+	#Input {
 		position: absolute;
-		width: 28px;
-		height: 28px;
+		width: 744px;
+		height: 48px;
 		left: 0px;
 		top: 0px;
 		overflow: visible;
+	}
+	#Rectangle_371 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(127,196,253,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_371 {
+		position: absolute;
+		overflow: visible;
+		width: 744px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Adobe {
+		left: 17px;
+		top: 16px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#Symbol_62__17 {
+		position: absolute;
+		width: 16.73px;
+		height: 16px;
+		left: 711.27px;
+		top: 16px;
+		overflow: visible;
+	}
+	#Rectangle_176 {
+		fill: transparent;
+	}
+	.Rectangle_176 {
+		position: absolute;
+		overflow: visible;
+		width: 16px;
+		height: 16px;
+		left: 0.73px;
+		top: 0px;
+	}
+	#Path_99 {
+		fill: rgba(38,153,251,1);
+	}
+	.Path_99 {
+		overflow: visible;
+		position: absolute;
+		width: 15.9px;
+		height: 15.9px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rectangle_387 {
+		fill: rgba(38,153,251,1);
+	}
+	.Rectangle_387 {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 22px;
+		left: 60px;
+		top: 13px;
+	}
+	#results {
+		position: absolute;
+		width: 744px;
+		height: 195px;
+		left: 0px;
+		top: 64px;
+		overflow: visible;
+	}
+	#Rectangle_388 {
+		fill: rgba(241,249,255,1);
+	}
+	.Rectangle_388 {
+		position: absolute;
+		overflow: visible;
+		width: 744px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Adobe_XD {
+		left: 17px;
+		top: 16px;
+		position: absolute;
+		overflow: visible;
+		width: 65px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#Rectangle_388_b {
+		fill: rgba(241,249,255,1);
+	}
+	.Rectangle_388_b {
+		position: absolute;
+		overflow: visible;
+		width: 744px;
+		height: 48px;
+		left: 0px;
+		top: 49px;
+	}
+	#Adobe_Photoshop {
+		left: 17px;
+		top: 65px;
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#Rectangle_389 {
+		fill: rgba(241,249,255,1);
+	}
+	.Rectangle_389 {
+		position: absolute;
+		overflow: visible;
+		width: 744px;
+		height: 48px;
+		left: 0px;
+		top: 98px;
+	}
+	#Adobe_Illustrator {
+		left: 17px;
+		top: 114px;
+		position: absolute;
+		overflow: visible;
+		width: 103px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#Rectangle_390 {
+		fill: rgba(241,249,255,1);
+	}
+	.Rectangle_390 {
+		position: absolute;
+		overflow: visible;
+		width: 744px;
+		height: 48px;
+		left: 0px;
+		top: 147px;
+	}
+	#Adobe_InDesign {
+		left: 17px;
+		top: 163px;
+		position: absolute;
+		overflow: visible;
+		width: 101px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#search_history {
+		position: absolute;
+		width: 744px;
+		height: 180px;
+		left: 0px;
+		top: 272px;
+		overflow: visible;
+	}
+	#Rectangle_391 {
+		fill: rgba(241,249,255,1);
+	}
+	.Rectangle_391 {
+		position: absolute;
+		overflow: visible;
+		width: 744px;
+		height: 1px;
+		left: 0px;
+		top: 32px;
+	}
+	#Excepteur_sint_occaecat {
+		left: 17px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 150px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#Rectangle_392 {
+		fill: rgba(241,249,255,1);
+	}
+	.Rectangle_392 {
+		position: absolute;
+		overflow: visible;
+		width: 744px;
+		height: 1px;
+		left: 0px;
+		top: 81px;
+	}
+	#Cupidatat_non {
+		left: 17px;
+		top: 49px;
+		position: absolute;
+		overflow: visible;
+		width: 88px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#Rectangle_393 {
+		fill: rgba(241,249,255,1);
+	}
+	.Rectangle_393 {
+		position: absolute;
+		overflow: visible;
+		width: 744px;
+		height: 1px;
+		left: 0px;
+		top: 130px;
+	}
+	#Sunt_in_culpa_qui_officia {
+		left: 17px;
+		top: 98px;
+		position: absolute;
+		overflow: visible;
+		width: 145px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#Path_110 {
+		fill: rgba(188,224,253,1);
+	}
+	.Path_110 {
+		overflow: visible;
+		position: absolute;
+		width: 15.9px;
+		height: 15.9px;
+		left: 711.27px;
+		top: 0.943px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_111 {
+		fill: rgba(188,224,253,1);
+	}
+	.Path_111 {
+		overflow: visible;
+		position: absolute;
+		width: 15.9px;
+		height: 15.9px;
+		left: 711.27px;
+		top: 49.943px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_112 {
+		fill: rgba(188,224,253,1);
+	}
+	.Path_112 {
+		overflow: visible;
+		position: absolute;
+		width: 15.9px;
+		height: 15.9px;
+		left: 711.27px;
+		top: 98.943px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rectangle_394 {
+		fill: rgba(241,249,255,1);
+	}
+	.Rectangle_394 {
+		position: absolute;
+		overflow: visible;
+		width: 744px;
+		height: 1px;
+		left: 0px;
+		top: 179px;
+	}
+	#Cupidatat_non_cn {
+		left: 17px;
+		top: 147px;
+		position: absolute;
+		overflow: visible;
+		width: 88px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#Path_113 {
+		fill: rgba(188,224,253,1);
+	}
+	.Path_113 {
+		overflow: visible;
+		position: absolute;
+		width: 15.9px;
+		height: 15.9px;
+		left: 711.27px;
+		top: 147.943px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Toolbar {
+		position: absolute;
+		width: 768px;
+		height: 57px;
+		left: 0px;
+		top: 967px;
+		overflow: visible;
+	}
+	#Rectangle_192 {
+		fill: rgba(0,0,0,1);
+	}
+	.Rectangle_192 {
+		overflow: visible;
+		position: absolute;
+		width: 768px;
+		height: 57px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Settings {
+		opacity: 0.3;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 704px;
+		top: 21px;
+		overflow: visible;
+	}
+	#Rectangle_193 {
+		fill: transparent;
+	}
+	.Rectangle_193 {
+		position: absolute;
+		overflow: visible;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 0px;
+	}
+	#Navigation_Bar {
+		position: absolute;
+		width: 768px;
+		height: 70px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_68 {
+		fill: transparent;
+	}
+	.Rectangle_68 {
+		position: absolute;
+		overflow: visible;
+		width: 768px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_69 {
+		fill: transparent;
+	}
+	.Rectangle_69 {
+		position: absolute;
+		overflow: visible;
+		width: 768px;
+		height: 50px;
+		left: 0px;
+		top: 20px;
+	}
+	#More {
+		position: absolute;
+		width: 3px;
+		height: 15px;
+		left: 749px;
+		top: 39px;
+		overflow: visible;
+	}
+	#Union_1 {
+		position: absolute;
+		width: 3px;
+		height: 15px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Ellipse_3 {
+		fill: rgba(38,153,251,1);
+	}
+	.Ellipse_3 {
+		position: absolute;
+		overflow: visible;
+		width: 3px;
+		height: 3px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ellipse_4 {
+		fill: rgba(38,153,251,1);
+	}
+	.Ellipse_4 {
+		position: absolute;
+		overflow: visible;
+		width: 3px;
+		height: 3px;
+		left: 0px;
+		top: 6px;
+	}
+	#Ellipse_5 {
+		fill: rgba(38,153,251,1);
+	}
+	.Ellipse_5 {
+		position: absolute;
+		overflow: visible;
+		width: 3px;
+		height: 3px;
+		left: 0px;
+		top: 12px;
+	}
+	#SEARCH {
+		left: 355px;
+		top: 37px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(38,153,251,1);
+	}
+	#Navigation_Bar_c {
+		position: absolute;
+		width: 375px;
+		height: 68px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_68_c {
+		fill: transparent;
+	}
+	.Rectangle_68_c {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_69_c {
+		fill: transparent;
+	}
+	.Rectangle_69_c {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 48px;
+		left: 0px;
+		top: 20px;
+	}
+	#Backward_arrow {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 16px;
+		top: 36px;
+		overflow: visible;
+	}
+	#Path_10 {
+		fill: rgba(38,153,251,1);
+	}
+	.Path_10 {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+	#Cancle_Search {
+		left: 283px;
+		top: 977px;
+		position: absolute;
+		overflow: visible;
+		width: 204px;
+		height: 26px;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: retrieve/Search___Flow3.html;
+		cursor: pointer;
+		text-align: center;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(255,248,248,1);
 	}
 </style>
 <script id="applicationScript">
@@ -1039,7 +1427,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -2607,7 +2995,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -3130,53 +3518,167 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Verify_Email__Flow3">
-	<svg class="Bacxckground_gradient_dark_blu" viewBox="-683 -420.94 1366 841.88">
-		</null>
-	</svg>
-		<div id="Group_5">
-			<svg class="Rectangle_9_by">
-				<radialGradient id="Rectangle_9_by" spreadMethod="pad" x1="0" x2="0" y1="0" y2="0">
-					<stop offset="0" stop-color="#4c5470" stop-opacity="1"></stop>
-					<stop offset="0.2785" stop-color="#434b65" stop-opacity="1"></stop>
-					<stop offset="0.7658" stop-color="#2d3347" stop-opacity="1"></stop>
-					<stop offset="0.9947" stop-color="#222638" stop-opacity="1"></stop>
-				</radialGradient>
-				<rect id="Rectangle_9_by" rx="0" ry="0" x="0" y="0" width="1366" height="841.88">
+<div id="search_bar_view__flow3" onclick="application.goToTargetView(event)">
+	<div onclick="application.goToTargetView(event)" id="Search">
+		<div id="Input">
+			<svg class="Rectangle_371">
+				<rect id="Rectangle_371" rx="0" ry="0" x="0" y="0" width="744" height="48">
+				</rect>
+			</svg>
+			<div id="Adobe">
+				<span>Adobe</span>
+			</div>
+			<div id="Symbol_62__17">
+				<svg class="Rectangle_176">
+					<rect id="Rectangle_176" rx="0" ry="0" x="0" y="0" width="16" height="16">
+					</rect>
+				</svg>
+				<svg class="Path_99" viewBox="0 0 15.9 15.9">
+					<path id="Path_99" d="M 15.89999961853027 14.5 L 12.59999942779541 11.19999980926514 C 13.5 10 14 8.600000381469727 14 7 C 14 3.099999904632568 10.89999961853027 0 7 0 C 3.100000381469727 0 0 3.099999904632568 0 7 C 0 10.89999961853027 3.099999904632568 14 7 14 C 8.600000381469727 14 10 13.5 11.19999980926514 12.60000038146973 L 14.5 15.90000057220459 L 15.89999961853027 14.5 Z M 2 7 C 2 4.199999809265137 4.199999809265137 2 7 2 C 9.800000190734863 2 12 4.199999809265137 12 7 C 12 9.800000190734863 9.800000190734863 12 7 12 C 4.199999809265137 12 2 9.800000190734863 2 7 Z">
+					</path>
+				</svg>
+			</div>
+			<svg class="Rectangle_387">
+				<rect id="Rectangle_387" rx="0" ry="0" x="0" y="0" width="1" height="22">
 				</rect>
 			</svg>
 		</div>
-	<svg class="Rectangle_16">
-		<rect id="Rectangle_16" rx="0" ry="0" x="0" y="0" width="850" height="562">
-		</rect>
-	</svg>
-	<div id="register" class="register">
-		<img id="Rectangle_3" src="Rectangle_3.png" srcset="Rectangle_3.png 1x, Rectangle_3@2x.png 2x">
-			
+		<div id="results">
+			<svg class="Rectangle_388">
+				<rect id="Rectangle_388" rx="0" ry="0" x="0" y="0" width="744" height="48">
+				</rect>
+			</svg>
+			<div id="Adobe_XD">
+				<span>Adobe XD</span>
+			</div>
+			<svg class="Rectangle_388_b">
+				<rect id="Rectangle_388_b" rx="0" ry="0" x="0" y="0" width="744" height="48">
+				</rect>
+			</svg>
+			<div id="Adobe_Photoshop">
+				<span>Adobe Photoshop</span>
+			</div>
+			<svg class="Rectangle_389">
+				<rect id="Rectangle_389" rx="0" ry="0" x="0" y="0" width="744" height="48">
+				</rect>
+			</svg>
+			<div id="Adobe_Illustrator">
+				<span>Adobe Illustrator</span>
+			</div>
+			<svg class="Rectangle_390">
+				<rect id="Rectangle_390" rx="0" ry="0" x="0" y="0" width="744" height="48">
+				</rect>
+			</svg>
+			<div id="Adobe_InDesign">
+				<span>Adobe InDesign</span>
+			</div>
+		</div>
+		<div id="search_history">
+			<svg class="Rectangle_391">
+				<rect id="Rectangle_391" rx="0" ry="0" x="0" y="0" width="744" height="1">
+				</rect>
+			</svg>
+			<div id="Excepteur_sint_occaecat">
+				<span>Excepteur sint occaecat</span>
+			</div>
+			<svg class="Rectangle_392">
+				<rect id="Rectangle_392" rx="0" ry="0" x="0" y="0" width="744" height="1">
+				</rect>
+			</svg>
+			<div id="Cupidatat_non">
+				<span>Cupidatat non</span>
+			</div>
+			<svg class="Rectangle_393">
+				<rect id="Rectangle_393" rx="0" ry="0" x="0" y="0" width="744" height="1">
+				</rect>
+			</svg>
+			<div id="Sunt_in_culpa_qui_officia">
+				<span>Sunt in culpa qui officia</span>
+			</div>
+			<svg class="Path_110" viewBox="0 0 15.9 15.9">
+				<path id="Path_110" d="M 15.89999961853027 14.5 L 12.59999942779541 11.19999980926514 C 13.5 10 14 8.600000381469727 14 7 C 14 3.099999904632568 10.89999961853027 0 7 0 C 3.100000381469727 0 0 3.099999904632568 0 7 C 0 10.89999961853027 3.099999904632568 14 7 14 C 8.600000381469727 14 10 13.5 11.19999980926514 12.60000038146973 L 14.5 15.90000057220459 L 15.89999961853027 14.5 Z M 2 7 C 2 4.199999809265137 4.199999809265137 2 7 2 C 9.800000190734863 2 12 4.199999809265137 12 7 C 12 9.800000190734863 9.800000190734863 12 7 12 C 4.199999809265137 12 2 9.800000190734863 2 7 Z">
+				</path>
+			</svg>
+			<svg class="Path_111" viewBox="0 0 15.9 15.9">
+				<path id="Path_111" d="M 15.89999961853027 14.5 L 12.59999942779541 11.19999980926514 C 13.5 10 14 8.600000381469727 14 7 C 14 3.099999904632568 10.89999961853027 0 7 0 C 3.100000381469727 0 0 3.099999904632568 0 7 C 0 10.89999961853027 3.099999904632568 14 7 14 C 8.600000381469727 14 10 13.5 11.19999980926514 12.60000038146973 L 14.5 15.90000057220459 L 15.89999961853027 14.5 Z M 2 7 C 2 4.199999809265137 4.199999809265137 2 7 2 C 9.800000190734863 2 12 4.199999809265137 12 7 C 12 9.800000190734863 9.800000190734863 12 7 12 C 4.199999809265137 12 2 9.800000190734863 2 7 Z">
+				</path>
+			</svg>
+			<svg class="Path_112" viewBox="0 0 15.9 15.9">
+				<path id="Path_112" d="M 15.89999961853027 14.5 L 12.59999942779541 11.19999980926514 C 13.5 10 14 8.600000381469727 14 7 C 14 3.099999904632568 10.89999961853027 0 7 0 C 3.100000381469727 0 0 3.099999904632568 0 7 C 0 10.89999961853027 3.099999904632568 14 7 14 C 8.600000381469727 14 10 13.5 11.19999980926514 12.60000038146973 L 14.5 15.90000057220459 L 15.89999961853027 14.5 Z M 2 7 C 2 4.199999809265137 4.199999809265137 2 7 2 C 9.800000190734863 2 12 4.199999809265137 12 7 C 12 9.800000190734863 9.800000190734863 12 7 12 C 4.199999809265137 12 2 9.800000190734863 2 7 Z">
+				</path>
+			</svg>
+			<svg class="Rectangle_394">
+				<rect id="Rectangle_394" rx="0" ry="0" x="0" y="0" width="744" height="1">
+				</rect>
+			</svg>
+			<div id="Cupidatat_non_cn">
+				<span>Cupidatat non</span>
+			</div>
+			<svg class="Path_113" viewBox="0 0 15.9 15.9">
+				<path id="Path_113" d="M 15.89999961853027 14.5 L 12.59999942779541 11.19999980926514 C 13.5 10 14 8.600000381469727 14 7 C 14 3.099999904632568 10.89999961853027 0 7 0 C 3.100000381469727 0 0 3.099999904632568 0 7 C 0 10.89999961853027 3.099999904632568 14 7 14 C 8.600000381469727 14 10 13.5 11.19999980926514 12.60000038146973 L 14.5 15.90000057220459 L 15.89999961853027 14.5 Z M 2 7 C 2 4.199999809265137 4.199999809265137 2 7 2 C 9.800000190734863 2 12 4.199999809265137 12 7 C 12 9.800000190734863 9.800000190734863 12 7 12 C 4.199999809265137 12 2 9.800000190734863 2 7 Z">
+				</path>
+			</svg>
+		</div>
 	</div>
-	<div id="Dzie_dobry">
-		<span>Dzień dobry!</span>
+	<div id="Toolbar">
+		<svg class="Rectangle_192" viewBox="0 0 768 57">
+			<path id="Rectangle_192" d="M 0 0 L 768 0 L 768 57 L 0 57 L 0 0 Z">
+			</path>
+		</svg>
+		<div id="Settings">
+			<svg class="Rectangle_193">
+				<rect id="Rectangle_193" rx="0" ry="0" x="0" y="0" width="16" height="16">
+				</rect>
+			</svg>
+		</div>
 	</div>
-	<div id="Thank_you_for_registering_with">
-		<span>Thank you for registering with Anemone! To get you started, we need to confirm your email address. Follow the instructions in the email just sent in order to verify your account.<br/><br/>Didn't receive an email yet? Click the button below to resend.</span>
+	<div id="Navigation_Bar">
+		<svg class="Rectangle_68">
+			<rect id="Rectangle_68" rx="0" ry="0" x="0" y="0" width="768" height="20">
+			</rect>
+		</svg>
+		<svg class="Rectangle_69">
+			<rect id="Rectangle_69" rx="0" ry="0" x="0" y="0" width="768" height="50">
+			</rect>
+		</svg>
+		<div id="More">
+			<div id="Union_1">
+				<svg class="Ellipse_3">
+					<ellipse id="Ellipse_3" rx="1.5" ry="1.5" cx="1.5" cy="1.5">
+					</ellipse>
+				</svg>
+				<svg class="Ellipse_4">
+					<ellipse id="Ellipse_4" rx="1.5" ry="1.5" cx="1.5" cy="1.5">
+					</ellipse>
+				</svg>
+				<svg class="Ellipse_5">
+					<ellipse id="Ellipse_5" rx="1.5" ry="1.5" cx="1.5" cy="1.5">
+					</ellipse>
+				</svg>
+			</div>
+		</div>
+		<div id="SEARCH">
+			<span>SEARCH</span>
+		</div>
 	</div>
-	<svg class="Rectangle_17">
-		<rect id="Rectangle_17" rx="0" ry="0" x="0" y="0" width="105" height="42">
-		</rect>
-	</svg>
-	<div id="Resend">
-		<span>Resend</span>
+	<div id="Navigation_Bar_c">
+		<svg class="Rectangle_68_c">
+			<rect id="Rectangle_68_c" rx="0" ry="0" x="0" y="0" width="375" height="20">
+			</rect>
+		</svg>
+		<svg class="Rectangle_69_c">
+			<rect id="Rectangle_69_c" rx="0" ry="0" x="0" y="0" width="375" height="48">
+			</rect>
+		</svg>
+		<div id="Backward_arrow">
+			<svg class="Path_10" viewBox="0 0 16 16">
+				<path id="Path_10" d="M 8 0 L 6.545454978942871 1.454545497894287 L 12.05194854736328 6.961039066314697 L 0 6.961039066314697 L 0 9.038961410522461 L 12.05194854736328 9.038961410522461 L 6.545454978942871 14.54545497894287 L 8 16 L 16 8 L 8 0 Z">
+				</path>
+			</svg>
+		</div>
 	</div>
-	<svg class="Rectangle_18">
-		<rect id="Rectangle_18" rx="7" ry="7" x="0" y="0" width="105" height="22">
-		</rect>
-	</svg>
-	<div id="Report_feedback">
-		<span>Report feedback</span>
-	</div>
-	<div onclick="application.goToTargetView(event)" id="x_close" class="x_close">
-		<img id="x_close_b" src="x_close_b.png" srcset="x_close_b.png 1x, x_close_b@2x.png 2x">
-			
+	<div onclick="application.goToTargetView(event)" id="Cancle_Search">
+		<span>Cancle Search</span>
 	</div>
 </div>
 </body>

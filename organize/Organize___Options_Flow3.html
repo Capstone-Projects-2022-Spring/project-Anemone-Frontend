@@ -216,7 +216,7 @@
 		transition: all 0.30000001192092896s wind-up;
 		--web-animation: fadein 0.30000001192092896s wind-up;
 		--web-action-type: page;
-		--web-action-target: Organize___Flow3.html;
+		--web-action-target: organize/Organize___Flow3.html;
 		cursor: pointer;
 	}
 </style>
@@ -1041,7 +1041,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -2609,7 +2609,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -3137,18 +3137,18 @@ window.application = new Application();
 		<rect id="Rectangle_3" rx="0" ry="0" x="0" y="0" width="680" height="160">
 		</rect>
 	</svg>
-	<img id="Image_12" src="Image_12.png" srcset="Image_12.png 1x, Image_12@2x.png 2x">
+	<img id="Image_12" src="../image/Image_12.png" srcset="../image/Image_12.png 1x, ../image/Image_12@2x.png 2x">
 		
 	<div id="n_____________________________">
 		<span>                               Sort It</span>
 	</div>
-	<img id="Image_13" src="Image_13.png" srcset="Image_13.png 1x, Image_13@2x.png 2x">
+	<img id="Image_13" src="../image/Image_13.png" srcset="../image/Image_13.png 1x, ../image/Image_13@2x.png 2x">
 		
-	<img id="Image_14" src="Image_14.png" srcset="Image_14.png 1x, Image_14@2x.png 2x">
+	<img id="Image_14" src="../image/Image_14.png" srcset="../image/Image_14.png 1x, ../image/Image_14@2x.png 2x">
 		
-	<img id="Image_15" src="Image_15.png" srcset="Image_15.png 1x, Image_15@2x.png 2x">
+	<img id="Image_15" src="../image/Image_15.png" srcset="../image/Image_15.png 1x, ../image/Image_15@2x.png 2x">
 		
-	<img id="Image_16" src="Image_16.png" srcset="Image_16.png 1x, Image_16@2x.png 2x">
+	<img id="Image_16" src="../image/Image_16.png" srcset="../image/Image_16.png 1x, ../image/Image_16@2x.png 2x">
 		
 	<svg class="Rectangle_4">
 		<rect id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="304" height="96">
@@ -3171,7 +3171,7 @@ window.application = new Application();
 	<div id="n__________________By_Date_Add">
 		<span>                  By Date Added</span>
 	</div>
-	<img onclick="application.goToTargetView(event)" id="Image_19" src="Image_19.png" srcset="Image_19.png 1x, Image_19@2x.png 2x">
+	<img onclick="application.goToTargetView(event)" id="Image_19" src="../image/Image_19.png" srcset="../image/Image_19.png 1x, ../image/Image_19@2x.png 2x">
 		
 </div>
 </body>

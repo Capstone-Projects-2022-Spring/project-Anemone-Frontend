@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Settings – Flow3</title>
+<title>Retrieve – Flow3</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Settings – Flow3;
-		--web-view-id: Settings__Flow3;
+		--web-view-name: Retrieve – Flow3;
+		--web-view-id: Retrieve__Flow3;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Settings__Flow3;
+		--web-view-ids: Retrieve__Flow3;
 	}
 	* {
 		margin: 0;
@@ -21,14 +21,14 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Settings__Flow3 {
+	#Retrieve__Flow3 {
 		position: absolute;
-		width: 1366px;
-		height: 768px;
+		width: 768px;
+		height: 1024px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: Settings – Flow3;
-		--web-view-id: Settings__Flow3;
+		--web-view-name: Retrieve – Flow3;
+		--web-view-id: Retrieve__Flow3;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
@@ -42,139 +42,62 @@
 		}
 	
 	}
-	#Bacxckground_gradient_dark_blu {
-		position: absolute;
-		width: 1366px;
-		height: 841.88px;
-		left: 0px;
-		top: -36.94px;
-		overflow: visible;
+	#Artwork_1 {
+		opacity: 0.56;
+		fill: transparent;
 	}
-	#Group_3 {
-		mix-blend-mode: normal;
+	.Artwork_1 {
+		overflow: hidden;
 		position: absolute;
-		width: 1366px;
-		height: 841.88px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Rectangle_7_by {
-		fill: url(#Rectangle_7_by);
-	}
-	.Rectangle_7_by {
-		position: absolute;
-		overflow: visible;
-		width: 1366px;
-		height: 841.88px;
+		width: 1479px;
+		height: 854px;
+		transform: matrix(1,0,0,1,-355.5,85) rotate(90deg);
+		transform-origin: center;
 		left: 0px;
 		top: 0px;
 	}
-	#Toggle_Features {
-		position: absolute;
-		width: 592px;
-		height: 363px;
-		left: 595px;
-		top: 308px;
-		overflow: visible;
+	#Rectangle_27_bx {
+		fill: url(#Rectangle_27_bx);
 	}
-	#Rectangle_19 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_19 {
+	.Rectangle_27_bx {
 		position: absolute;
 		overflow: visible;
-		width: 592px;
-		height: 363px;
+		width: 854px;
+		height: 1479px;
 		left: 0px;
 		top: 0px;
 	}
-	#Toggle_your_priorities {
-		left: 193px;
-		top: 81px;
+	#icon_retrieve {
 		position: absolute;
+		width: 90px;
+		height: 90px;
+		left: 655px;
+		top: 755px;
 		overflow: visible;
-		width: 185px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(27,40,226,1);
+		transition: all 0.30000001192092896s linear;
+		--web-animation: fadein 0.30000001192092896s linear;
+		--web-action-type: page;
+		--web-action-target: retrieve/Retrieve___Options___Flow3.html;
+		cursor: pointer;
 	}
-	#Collect {
-		left: 186px;
-		top: 142px;
+	#icon_retrieve_bz {
 		position: absolute;
+		width: 90px;
+		height: 90px;
+		left: 0px;
+		top: 0px;
 		overflow: visible;
-		width: 63px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(27,40,226,1);
-	}
-	#Organize {
-		left: 186px;
-		top: 189px;
-		position: absolute;
-		overflow: visible;
-		width: 83px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(27,40,226,1);
-	}
-	#Modify {
-		left: 192px;
-		top: 235px;
-		position: absolute;
-		overflow: visible;
-		width: 59px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(27,40,226,1);
-	}
-	#Retrieve {
-		left: 185px;
-		top: 281px;
-		position: absolute;
-		overflow: visible;
-		width: 75px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(27,40,226,1);
 	}
 	#x_close {
 		position: absolute;
 		width: 28px;
 		height: 28px;
-		left: 530px;
-		top: 19px;
+		left: 731px;
+		top: 741px;
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: Artboard_Anemone_Features___Flow3_LOGGED_IN.html;
+		--web-action-target: home/Anemone_Features___Flow3.html;
 		cursor: pointer;
 	}
 	#x_close_b {
@@ -185,169 +108,26 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Toggle_Switch {
+	#Anemone_03 {
 		position: absolute;
-		width: 68px;
-		height: 21px;
-		left: 683px;
-		top: 585px;
+		width: 162px;
+		height: 137px;
+		left: 538px;
+		top: 841px;
 		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-in-out;
+		--web-action-type: page;
+		--web-action-target: home/Anemone_Start___Flow3.html;
+		cursor: pointer;
 	}
-	#Rectangle_24 {
-		fill: rgba(91,91,104,1);
-	}
-	.Rectangle_24 {
+	#Anemone_03_b {
+		opacity: 0.985;
 		position: absolute;
-		overflow: visible;
-		width: 67px;
-		height: 21px;
-		left: 1px;
-		top: 0px;
-	}
-	#Rectangle_25 {
-		fill: rgba(23,175,6,1);
-	}
-	.Rectangle_25 {
-		position: absolute;
-		overflow: visible;
-		width: 45px;
-		height: 21px;
-		left: 1px;
-		top: 0px;
-	}
-	#Rectangle_26 {
-		fill: rgba(238,22,166,1);
-	}
-	.Rectangle_26 {
-		position: absolute;
-		overflow: visible;
-		width: 46px;
-		height: 21px;
+		width: 162px;
+		height: 137px;
 		left: 0px;
 		top: 0px;
-	}
-	#Toggle_Switch_cc {
-		position: absolute;
-		width: 68px;
-		height: 21px;
-		left: 683px;
-		top: 540px;
 		overflow: visible;
-	}
-	#Rectangle_24_cd {
-		fill: rgba(91,91,104,1);
-	}
-	.Rectangle_24_cd {
-		position: absolute;
-		overflow: visible;
-		width: 67px;
-		height: 21px;
-		left: 1px;
-		top: 0px;
-	}
-	#Rectangle_25_ce {
-		fill: rgba(23,175,6,1);
-	}
-	.Rectangle_25_ce {
-		position: absolute;
-		overflow: visible;
-		width: 45px;
-		height: 21px;
-		left: 1px;
-		top: 0px;
-	}
-	#Rectangle_26_cf {
-		fill: rgba(238,22,166,1);
-	}
-	.Rectangle_26_cf {
-		position: absolute;
-		overflow: visible;
-		width: 46px;
-		height: 21px;
-		left: 0px;
-		top: 0px;
-	}
-	#Toggle_Switch_cg {
-		position: absolute;
-		width: 68px;
-		height: 21px;
-		left: 683px;
-		top: 495px;
-		overflow: visible;
-	}
-	#Rectangle_24_ch {
-		fill: rgba(91,91,104,1);
-	}
-	.Rectangle_24_ch {
-		position: absolute;
-		overflow: visible;
-		width: 67px;
-		height: 21px;
-		left: 1px;
-		top: 0px;
-	}
-	#Rectangle_25_ci {
-		fill: rgba(23,175,6,1);
-	}
-	.Rectangle_25_ci {
-		position: absolute;
-		overflow: visible;
-		width: 45px;
-		height: 21px;
-		left: 1px;
-		top: 0px;
-	}
-	#Rectangle_26_cj {
-		fill: rgba(238,22,166,1);
-	}
-	.Rectangle_26_cj {
-		position: absolute;
-		overflow: visible;
-		width: 46px;
-		height: 21px;
-		left: 0px;
-		top: 0px;
-	}
-	#Toggle_Switch_ck {
-		position: absolute;
-		width: 68px;
-		height: 21px;
-		left: 683px;
-		top: 450px;
-		overflow: visible;
-	}
-	#Rectangle_24_cl {
-		fill: rgba(91,91,104,1);
-	}
-	.Rectangle_24_cl {
-		position: absolute;
-		overflow: visible;
-		width: 67px;
-		height: 21px;
-		left: 1px;
-		top: 0px;
-	}
-	#Rectangle_25_cm {
-		fill: rgba(23,175,6,1);
-	}
-	.Rectangle_25_cm {
-		position: absolute;
-		overflow: visible;
-		width: 45px;
-		height: 21px;
-		left: 1px;
-		top: 0px;
-	}
-	#Rectangle_26_cn {
-		fill: rgba(238,22,166,1);
-	}
-	.Rectangle_26_cn {
-		position: absolute;
-		overflow: visible;
-		width: 46px;
-		height: 21px;
-		left: 0px;
-		top: 0px;
 	}
 </style>
 <script id="applicationScript">
@@ -1171,7 +951,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -2739,7 +2519,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -3262,101 +3042,35 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Settings__Flow3">
-	<div id="Bacxckground_gradient_dark_blu">
-		<div id="Group_3">
-			<svg class="Rectangle_7_by">
-				<radialGradient id="Rectangle_7_by" spreadMethod="pad" x1="0" x2="0" y1="0" y2="0">
-					<stop offset="0" stop-color="#4c5470" stop-opacity="1"></stop>
-					<stop offset="0.2785" stop-color="#434b65" stop-opacity="1"></stop>
-					<stop offset="0.7658" stop-color="#2d3347" stop-opacity="1"></stop>
-					<stop offset="0.9947" stop-color="#222638" stop-opacity="1"></stop>
-				</radialGradient>
-				<rect id="Rectangle_7_by" rx="0" ry="0" x="0" y="0" width="1366" height="841.88">
-				</rect>
-			</svg>
-		</div>
+<div id="Retrieve__Flow3">
+	<svg class="Artwork_1" viewBox="-739.5 -427 1479 854">
+		</null>
+	</svg>
+		<svg class="Rectangle_27_bx">
+			<radialGradient id="Rectangle_27_bx" spreadMethod="pad" x1="0" x2="0" y1="0" y2="0">
+				<stop offset="0" stop-color="#00d413" stop-opacity="0.8"></stop>
+				<stop offset="0.0586" stop-color="#11d622" stop-opacity="0.745"></stop>
+				<stop offset="0.163" stop-color="#3ede4d" stop-opacity="0.604"></stop>
+				<stop offset="0.301" stop-color="#89ea92" stop-opacity="0.369"></stop>
+				<stop offset="0.4658" stop-color="#effaf0" stop-opacity="0.051"></stop>
+				<stop offset="0.4899" stop-color="#fffdff" stop-opacity="0"></stop>
+				<stop offset="0.6106" stop-color="#ffa7f1" stop-opacity="0"></stop>
+				<stop offset="1" stop-color="#ff8bec" stop-opacity="0.698"></stop>
+			</radialGradient>
+			<rect id="Rectangle_27_bx" rx="0" ry="0" x="0" y="0" width="1479" height="854">
+			</rect>
+		</svg>
+	<div onclick="application.goToTargetView(event)" id="icon_retrieve" class="icon_retrieve">
+		<img id="icon_retrieve_bz" src="../image/icon_retrieve_bz.png" srcset="../image/icon_retrieve_bz.png 1x, ../image/icon_retrieve_bz@2x.png 2x">
+			
 	</div>
-	<div id="Toggle_Features" class="Toggle_Features">
-		<svg class="Rectangle_19">
-			<rect id="Rectangle_19" rx="54" ry="54" x="0" y="0" width="592" height="363">
-			</rect>
-		</svg>
-		<div id="Toggle_your_priorities">
-			<span>Toggle your priorities</span>
-		</div>
-		<div id="Collect">
-			<span>Collect</span>
-		</div>
-		<div id="Organize">
-			<span>Organize</span>
-		</div>
-		<div id="Modify">
-			<span>Modify</span>
-		</div>
-		<div id="Retrieve">
-			<span>Retrieve</span>
-		</div>
-		<div onclick="application.goToTargetView(event)" id="x_close" class="x_close">
-			<img id="x_close_b" src="x_close_b.png" srcset="x_close_b.png 1x, x_close_b@2x.png 2x">
-				
-		</div>
+	<div onclick="application.goToTargetView(event)" id="x_close" class="x_close">
+		<img id="x_close_b" src="../image/x_close_b.png" srcset="../image/x_close_b.png 1x, ../image/x_close_b@2x.png 2x">
+			
 	</div>
-	<div id="Toggle_Switch" class="Toggle_Switch">
-		<svg class="Rectangle_24">
-			<rect id="Rectangle_24" rx="10.5" ry="10.5" x="0" y="0" width="67" height="21">
-			</rect>
-		</svg>
-		<svg class="Rectangle_25">
-			<rect id="Rectangle_25" rx="10.5" ry="10.5" x="0" y="0" width="45" height="21">
-			</rect>
-		</svg>
-		<svg class="Rectangle_26">
-			<rect id="Rectangle_26" rx="10.5" ry="10.5" x="0" y="0" width="46" height="21">
-			</rect>
-		</svg>
-	</div>
-	<div id="Toggle_Switch_cc" class="Toggle_Switch">
-		<svg class="Rectangle_24_cd">
-			<rect id="Rectangle_24_cd" rx="10.5" ry="10.5" x="0" y="0" width="67" height="21">
-			</rect>
-		</svg>
-		<svg class="Rectangle_25_ce">
-			<rect id="Rectangle_25_ce" rx="10.5" ry="10.5" x="0" y="0" width="45" height="21">
-			</rect>
-		</svg>
-		<svg class="Rectangle_26_cf">
-			<rect id="Rectangle_26_cf" rx="10.5" ry="10.5" x="0" y="0" width="46" height="21">
-			</rect>
-		</svg>
-	</div>
-	<div id="Toggle_Switch_cg" class="Toggle_Switch">
-		<svg class="Rectangle_24_ch">
-			<rect id="Rectangle_24_ch" rx="10.5" ry="10.5" x="0" y="0" width="67" height="21">
-			</rect>
-		</svg>
-		<svg class="Rectangle_25_ci">
-			<rect id="Rectangle_25_ci" rx="10.5" ry="10.5" x="0" y="0" width="45" height="21">
-			</rect>
-		</svg>
-		<svg class="Rectangle_26_cj">
-			<rect id="Rectangle_26_cj" rx="10.5" ry="10.5" x="0" y="0" width="46" height="21">
-			</rect>
-		</svg>
-	</div>
-	<div id="Toggle_Switch_ck" class="Toggle_Switch">
-		<svg class="Rectangle_24_cl">
-			<rect id="Rectangle_24_cl" rx="10.5" ry="10.5" x="0" y="0" width="67" height="21">
-			</rect>
-		</svg>
-		<svg class="Rectangle_25_cm">
-			<rect id="Rectangle_25_cm" rx="10.5" ry="10.5" x="0" y="0" width="45" height="21">
-			</rect>
-		</svg>
-		<svg class="Rectangle_26_cn">
-			<rect id="Rectangle_26_cn" rx="10.5" ry="10.5" x="0" y="0" width="46" height="21">
-			</rect>
-		</svg>
+	<div onclick="application.goToTargetView(event)" id="Anemone_03" class="Anemone_03">
+		<img id="Anemone_03_b" src="../image/Anemone_03_b.png" srcset="../image/Anemone_03_b.png 1x, ../image/Anemone_03_b@2x.png 2x">
+			
 	</div>
 </div>
 </body>

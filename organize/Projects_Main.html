@@ -4,22 +4,33 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Retrieve Search Results</title>
+<title>Projects Main</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Retrieve Search Results;
-		--web-view-id: Retrieve_Search_Results;
+		--web-view-name: Projects Main;
+		--web-view-id: Projects_Main;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Retrieve_Search_Results;
+		--web-view-ids: Projects_Main;
 	}
 	* {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
 		border: none;
+	}
+	#Projects_Main {
+		position: absolute;
+		width: 768px;
+		height: 1024px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Projects Main;
+		--web-view-id: Projects_Main;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
 	}
 	@keyframes fadein {
 	
@@ -31,24 +42,33 @@
 		}
 	
 	}
-	#Retrieve_Search_Results {
-		position: absolute;
-		width: 768px;
-		height: 1024px;
-		background-color: rgba(255,255,255,1);
+	#Artwork_1 {
+		opacity: 0.56;
+		fill: transparent;
+	}
+	.Artwork_1 {
 		overflow: hidden;
-		transition: all 0.30000001192092896s linear;
-		--web-animation: fadein 0.30000001192092896s linear;
-		--web-action-type: page;
-		--web-action-target: Select_Retrieve_Search_Results.html;
-		cursor: pointer;
-		--web-view-name: Retrieve Search Results;
-		--web-view-id: Retrieve_Search_Results;
-		--web-scale-on-resize: true;
-		--web-enable-deep-linking: true;
+		position: absolute;
+		width: 1479px;
+		height: 854px;
+		transform: matrix(1,0,0,1,-339.5,85) rotate(90deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_42_bx {
+		fill: url(#Rectangle_42_bx);
+	}
+	.Rectangle_42_bx {
+		position: absolute;
+		overflow: visible;
+		width: 854px;
+		height: 1479px;
+		left: 0px;
+		top: 0px;
 	}
 	#Rectangle_3 {
-		fill: rgba(199,180,180,1);
+		fill: rgba(162,199,130,1);
 		stroke: rgba(112,112,112,1);
 		stroke-width: 1px;
 		stroke-linejoin: miter;
@@ -64,12 +84,12 @@
 		left: 44px;
 		top: 56px;
 	}
-	#n_____________________________ {
-		left: -245px;
-		top: 114px;
+	#Projects {
+		left: 311px;
+		top: 106px;
 		position: absolute;
 		overflow: visible;
-		width: 715px;
+		width: 147px;
 		white-space: nowrap;
 		text-align: center;
 		font-family: Helvetica Neue;
@@ -78,7 +98,7 @@
 		font-size: 40px;
 		color: rgba(112,112,112,1);
 	}
-	#Rectangle_14 {
+	#Rectangle_20 {
 		fill: rgba(255,255,255,1);
 		stroke: rgba(112,112,112,1);
 		stroke-width: 1px;
@@ -87,20 +107,45 @@
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.Rectangle_14 {
+	.Rectangle_20 {
 		position: absolute;
 		overflow: visible;
-		width: 134px;
-		height: 36px;
-		left: 536px;
-		top: 256px;
+		width: 496px;
+		height: 128px;
+		left: 136px;
+		top: 320px;
+		--web-animation: fadein 0.30000001192092896s ease-in-out;
+		--web-action-type: page;
+		--web-action-target: organize/Organize___Options_Flow3.html;
+		cursor: pointer;
 	}
-	#n_________Delete {
-		left: 445px;
-		top: 250px;
+	#Rectangle_21 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_21 {
 		position: absolute;
 		overflow: visible;
-		width: 215px;
+		width: 496px;
+		height: 144px;
+		left: 136px;
+		top: 528px;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: retrieve/Detach_Retrieve_Search_Results.html;
+		cursor: pointer;
+	}
+	#n_____________________________ {
+		left: -96px;
+		top: 370px;
+		position: absolute;
+		overflow: visible;
+		width: 625px;
 		white-space: nowrap;
 		text-align: center;
 		font-family: Helvetica Neue;
@@ -109,1107 +154,32 @@
 		font-size: 40px;
 		color: rgba(112,112,112,1);
 	}
-	#Search_Results_List {
-		position: absolute;
-		width: 552px;
-		height: 495px;
-		left: 94px;
-		top: 431px;
-		overflow: visible;
-	}
-	#n_______Select___ {
-		left: 374px;
-		top: 0px;
+	#n______________________________b {
+		left: -172px;
+		top: 554px;
 		position: absolute;
 		overflow: visible;
-		width: 113px;
+		width: 713px;
 		white-space: nowrap;
 		text-align: center;
 		font-family: Helvetica Neue;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 20px;
+		font-size: 40px;
 		color: rgba(112,112,112,1);
-	}
-	#Search_Results_Menus {
-		mix-blend-mode: darken;
-		position: absolute;
-		width: 552px;
-		height: 466px;
-		left: 0px;
-		top: 29px;
-		overflow: visible;
-	}
-	#Menu_-_Dark {
-		position: absolute;
-		width: 552px;
-		height: 466px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		padding: -2px 82px -30px 14px;
-	}
-	#Menus_-_Background {
-		position: absolute;
-		width: 552px;
-		height: 434px;
-		left: 0px;
-		top: 2px;
-		overflow: visible;
-	}
-	#Rectangle {
-		filter: blur(30px);
-		fill: rgba(0,0,0,0.412);
-	}
-	.Rectangle {
-		position: absolute;
-		overflow: visible;
-		width: 552px;
-		height: 434px;
-		left: 0px;
-		top: 0px;
-	}
-	#Menus_-_Action {
-		position: absolute;
-		width: 456px;
-		height: 45px;
-		left: 14px;
-		top: 421px;
-		overflow: visible;
-	}
-	#BG {
-		fill: transparent;
-	}
-	.BG {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 45px;
-		left: 0px;
-		top: 0px;
-	}
-	#Menus_-_Separator_-_Regular {
-		position: absolute;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 44px;
-		display: none;
-		overflow: visible;
-	}
-	#ControlsMenusxLight_-_Separato {
-		fill: transparent;
-	}
-	.ControlsMenusxLight_-_Separato {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_b {
-		fill: rgba(84,84,88,0.651);
-	}
-	.Rectangle_b {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 0.5px;
-		left: 0px;
-		top: 0.5px;
-	}
-	#Symbol {
-		left: 417.5px;
-		top: 15px;
-		position: absolute;
-		overflow: visible;
-		width: 21px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: center;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Label {
-		left: 33px;
-		top: 16px;
-		position: absolute;
-		overflow: visible;
-		width: 32px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Symbol_cc {
-		left: 10px;
-		top: 15px;
-		position: absolute;
-		overflow: visible;
-		width: 18px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
-	}
-	#Menus_-_Action_cd {
-		position: absolute;
-		width: 456px;
-		height: 45px;
-		left: 14px;
-		top: 376px;
-		overflow: visible;
-	}
-	#BG_ce {
-		fill: transparent;
-	}
-	.BG_ce {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 45px;
-		left: 0px;
-		top: 0px;
-	}
-	#Menus_-_Separator_-_Regular_cf {
-		position: absolute;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 44px;
-		overflow: visible;
-	}
-	#ControlsMenusxLight_-_Separato_cg {
-		fill: transparent;
-	}
-	.ControlsMenusxLight_-_Separato_cg {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_ch {
-		fill: rgba(84,84,88,0.651);
-	}
-	.Rectangle_ch {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 0.5px;
-		left: 0px;
-		top: 0.5px;
-	}
-	#Symbol_ci {
-		left: 417.5px;
-		top: 15px;
-		position: absolute;
-		overflow: visible;
-		width: 21px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: center;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Label_cj {
-		left: 33px;
-		top: 16px;
-		position: absolute;
-		overflow: visible;
-		width: 32px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Symbol_ck {
-		left: 10px;
-		top: 15px;
-		position: absolute;
-		overflow: visible;
-		width: 18px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
-	}
-	#Menus_-_Action_cl {
-		position: absolute;
-		width: 456px;
-		height: 45px;
-		left: 14px;
-		top: 331px;
-		overflow: visible;
-	}
-	#BG_cm {
-		fill: transparent;
-	}
-	.BG_cm {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 45px;
-		left: 0px;
-		top: 0px;
-	}
-	#Menus_-_Separator_-_Regular_cn {
-		position: absolute;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 44px;
-		overflow: visible;
-	}
-	#ControlsMenusxLight_-_Separato_co {
-		fill: transparent;
-	}
-	.ControlsMenusxLight_-_Separato_co {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_cp {
-		fill: rgba(84,84,88,0.651);
-	}
-	.Rectangle_cp {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 0.5px;
-		left: 0px;
-		top: 0.5px;
-	}
-	#Symbol_cq {
-		left: 417.5px;
-		top: 15px;
-		position: absolute;
-		overflow: visible;
-		width: 21px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: center;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Label_cr {
-		left: 33px;
-		top: 16px;
-		position: absolute;
-		overflow: visible;
-		width: 222px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Symbol_cs {
-		left: 10px;
-		top: 15px;
-		position: absolute;
-		overflow: visible;
-		width: 18px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
-	}
-	#Menus_-_Separator {
-		position: absolute;
-		width: 456px;
-		height: 8px;
-		left: 14px;
-		top: 323px;
-		overflow: visible;
-	}
-	#Rectangle_cu {
-		fill: rgba(118,118,128,0.239);
-	}
-	.Rectangle_cu {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 8px;
-		left: 0px;
-		top: 0px;
-	}
-	#Menus_-_Action_cv {
-		position: absolute;
-		width: 456px;
-		height: 45px;
-		left: 14px;
-		top: 278px;
-		overflow: visible;
-	}
-	#BG_cw {
-		fill: transparent;
-	}
-	.BG_cw {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 45px;
-		left: 0px;
-		top: 0px;
-	}
-	#Menus_-_Separator_-_Regular_cx {
-		position: absolute;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 44px;
-		overflow: visible;
-	}
-	#ControlsMenusxLight_-_Separato_cy {
-		fill: transparent;
-	}
-	.ControlsMenusxLight_-_Separato_cy {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_cz {
-		fill: rgba(84,84,88,0.651);
-	}
-	.Rectangle_cz {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 0.5px;
-		left: 0px;
-		top: 0.5px;
-	}
-	#Symbol_c {
-		left: 417.5px;
-		top: 15px;
-		position: absolute;
-		overflow: visible;
-		width: 21px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: center;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Label_c {
-		left: 33px;
-		top: 16px;
-		position: absolute;
-		overflow: visible;
-		width: 79px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Symbol_da {
-		display: none;
-		left: 8px;
-		top: 14px;
-		position: absolute;
-		overflow: visible;
-		width: 18px;
-		height: 18px;
-		line-height: 22px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
-	}
-	#Menus_-_Action_c {
-		position: absolute;
-		width: 456px;
-		height: 45px;
-		left: 14px;
-		top: 233px;
-		overflow: visible;
-	}
-	#BG_c {
-		fill: transparent;
-	}
-	.BG_c {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 45px;
-		left: 0px;
-		top: 0px;
-	}
-	#Menus_-_Separator_-_Regular_c {
-		position: absolute;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 44px;
-		overflow: visible;
-	}
-	#ControlsMenusxLight_-_Separato_c {
-		fill: transparent;
-	}
-	.ControlsMenusxLight_-_Separato_c {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_c {
-		fill: rgba(84,84,88,0.651);
-	}
-	.Rectangle_c {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 0.5px;
-		left: 0px;
-		top: 0.5px;
-	}
-	#Symbol_db {
-		left: 417.5px;
-		top: 15px;
-		position: absolute;
-		overflow: visible;
-		width: 21px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: center;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Label_da {
-		left: 33px;
-		top: 16px;
-		position: absolute;
-		overflow: visible;
-		width: 139px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Symbol_dc {
-		left: 8px;
-		top: 14px;
-		position: absolute;
-		overflow: visible;
-		width: 18px;
-		height: 18px;
-		line-height: 22px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
-	}
-	#Menus_-_Action_db {
-		position: absolute;
-		width: 456px;
-		height: 45px;
-		left: 14px;
-		top: 188px;
-		overflow: visible;
-	}
-	#BG_dc {
-		fill: transparent;
-	}
-	.BG_dc {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 45px;
-		left: 0px;
-		top: 0px;
-	}
-	#Menus_-_Separator_-_Regular_dd {
-		position: absolute;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 44px;
-		overflow: visible;
-	}
-	#ControlsMenusxLight_-_Separato_de {
-		fill: transparent;
-	}
-	.ControlsMenusxLight_-_Separato_de {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_df {
-		fill: rgba(84,84,88,0.651);
-	}
-	.Rectangle_df {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 0.5px;
-		left: 0px;
-		top: 0.5px;
-	}
-	#Symbol_dg {
-		left: 417.5px;
-		top: 15px;
-		position: absolute;
-		overflow: visible;
-		width: 21px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: center;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Label_dh {
-		left: 33px;
-		top: 16px;
-		position: absolute;
-		overflow: visible;
-		width: 82px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Symbol_di {
-		display: none;
-		left: 8px;
-		top: 14px;
-		position: absolute;
-		overflow: visible;
-		width: 18px;
-		height: 18px;
-		line-height: 22px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
-	}
-	#Menus_-_Action_dj {
-		position: absolute;
-		width: 456px;
-		height: 45px;
-		left: 14px;
-		top: 143px;
-		overflow: visible;
-	}
-	#BG_dk {
-		fill: transparent;
-	}
-	.BG_dk {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 45px;
-		left: 0px;
-		top: 0px;
-	}
-	#Menus_-_Separator_-_Regular_dl {
-		position: absolute;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 44px;
-		overflow: visible;
-	}
-	#ControlsMenusxLight_-_Separato_dm {
-		fill: transparent;
-	}
-	.ControlsMenusxLight_-_Separato_dm {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_dn {
-		fill: rgba(84,84,88,0.651);
-	}
-	.Rectangle_dn {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 0.5px;
-		left: 0px;
-		top: 0.5px;
-	}
-	#Symbol_do {
-		left: 417.5px;
-		top: 15px;
-		position: absolute;
-		overflow: visible;
-		width: 21px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: center;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Label_dp {
-		left: 33px;
-		top: 16px;
-		position: absolute;
-		overflow: visible;
-		width: 181px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Symbol_dq {
-		left: 8px;
-		top: 14px;
-		position: absolute;
-		overflow: visible;
-		width: 18px;
-		height: 18px;
-		line-height: 22px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
-	}
-	#Menus_-_Separator_dr {
-		position: absolute;
-		width: 456px;
-		height: 8px;
-		left: 14px;
-		top: 135px;
-		overflow: visible;
-	}
-	#Rectangle_ds {
-		fill: rgba(118,118,128,0.239);
-	}
-	.Rectangle_ds {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 8px;
-		left: 0px;
-		top: 0px;
-	}
-	#Menus_-_Action_dt {
-		position: absolute;
-		width: 456px;
-		height: 45px;
-		left: 14px;
-		top: 90px;
-		overflow: visible;
-	}
-	#BG_du {
-		fill: transparent;
-	}
-	.BG_du {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 45px;
-		left: 0px;
-		top: 0px;
-	}
-	#Menus_-_Separator_-_Regular_dv {
-		position: absolute;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 44px;
-		overflow: visible;
-	}
-	#ControlsMenusxLight_-_Separato_dw {
-		fill: transparent;
-	}
-	.ControlsMenusxLight_-_Separato_dw {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_dx {
-		fill: rgba(84,84,88,0.651);
-	}
-	.Rectangle_dx {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 0.5px;
-		left: 0px;
-		top: 0.5px;
-	}
-	#Symbol_dy {
-		left: 417.5px;
-		top: 15px;
-		position: absolute;
-		overflow: visible;
-		width: 21px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: center;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Label_dz {
-		left: 33px;
-		top: 16px;
-		position: absolute;
-		overflow: visible;
-		width: 32px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Symbol_d {
-		display: none;
-		left: 8px;
-		top: 14px;
-		position: absolute;
-		overflow: visible;
-		width: 18px;
-		height: 18px;
-		line-height: 22px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
-	}
-	#Menus_-_Action_d {
-		position: absolute;
-		width: 456px;
-		height: 45px;
-		left: 14px;
-		top: 45px;
-		overflow: visible;
-	}
-	#BG_d {
-		fill: transparent;
-	}
-	.BG_d {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 45px;
-		left: 0px;
-		top: 0px;
-	}
-	#Menus_-_Separator_-_Regular_d {
-		position: absolute;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 44px;
-		overflow: visible;
-	}
-	#ControlsMenusxLight_-_Separato_d {
-		fill: transparent;
-	}
-	.ControlsMenusxLight_-_Separato_d {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_d {
-		fill: rgba(84,84,88,0.651);
-	}
-	.Rectangle_d {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 0.5px;
-		left: 0px;
-		top: 0.5px;
-	}
-	#Symbol_ea {
-		left: 417.5px;
-		top: 15px;
-		position: absolute;
-		overflow: visible;
-		width: 21px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: center;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Label_d {
-		left: 33px;
-		top: 16px;
-		position: absolute;
-		overflow: visible;
-		width: 136px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Symbol_eb {
-		display: none;
-		left: 8px;
-		top: 14px;
-		position: absolute;
-		overflow: visible;
-		width: 18px;
-		height: 18px;
-		line-height: 22px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
-	}
-	#Menus_-_Action_ea {
-		position: absolute;
-		width: 456px;
-		height: 45px;
-		left: 14px;
-		top: 0px;
-		overflow: visible;
-	}
-	#BG_ea {
-		fill: transparent;
-	}
-	.BG_ea {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 45px;
-		left: 0px;
-		top: 0px;
-	}
-	#Menus_-_Separator_-_Regular_eb {
-		position: absolute;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 44px;
-		overflow: visible;
-	}
-	#ControlsMenusxLight_-_Separato_ec {
-		fill: transparent;
-	}
-	.ControlsMenusxLight_-_Separato_ec {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 1px;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_ed {
-		fill: rgba(84,84,88,0.651);
-	}
-	.Rectangle_ed {
-		position: absolute;
-		overflow: visible;
-		width: 456px;
-		height: 0.5px;
-		left: 0px;
-		top: 0.5px;
-	}
-	#Symbol_ee {
-		left: 417.5px;
-		top: 15px;
-		position: absolute;
-		overflow: visible;
-		width: 21px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: center;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Label_ef {
-		left: 33px;
-		top: 16px;
-		position: absolute;
-		overflow: visible;
-		width: 78px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -2.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(255,255,255,1);
-	}
-	#Symbol_eg {
-		left: 8px;
-		top: 14px;
-		position: absolute;
-		overflow: visible;
-		width: 18px;
-		height: 18px;
-		line-height: 22px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: SF Pro;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 15px;
-		color: rgba(255,255,255,1);
 	}
 	#Image_19 {
 		position: absolute;
 		width: 64px;
 		height: 63px;
 		left: 0px;
-		top: 1px;
-		overflow: visible;
-	}
-	#Anemone_03 {
-		position: absolute;
-		width: 162px;
-		height: 137px;
-		left: 606px;
-		top: 887px;
-		overflow: visible;
-		--web-animation: fadein 0.30000001192092896s ease-in-out;
-		--web-action-type: page;
-		--web-action-target: Anemone_Features___Flow3.html;
-		cursor: pointer;
-	}
-	#Anemone_03_ej {
-		opacity: 0.985;
-		position: absolute;
-		width: 162px;
-		height: 137px;
-		left: 0px;
 		top: 0px;
 		overflow: visible;
+		transition: all 0.30000001192092896s snap;
+		--web-animation: fadein 0.30000001192092896s snap;
+		--web-action-type: page;
+		--web-action-target: retrieve/Retrieve___Options___Flow3.html;
+		cursor: pointer;
 	}
 </style>
 <script id="applicationScript">
@@ -2033,7 +1003,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -3601,7 +2571,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -4124,304 +3094,47 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Retrieve_Search_Results" onclick="application.goToTargetView(event)">
+<div id="Projects_Main">
+	<svg class="Artwork_1" viewBox="-739.5 -427 1479 854">
+		</null>
+	</svg>
+		<svg class="Rectangle_42_bx">
+			<radialGradient id="Rectangle_42_bx" spreadMethod="pad" x1="0" x2="0" y1="0" y2="0">
+				<stop offset="0" stop-color="#00d413" stop-opacity="0.8"></stop>
+				<stop offset="0.0586" stop-color="#11d622" stop-opacity="0.745"></stop>
+				<stop offset="0.163" stop-color="#3ede4d" stop-opacity="0.604"></stop>
+				<stop offset="0.301" stop-color="#89ea92" stop-opacity="0.369"></stop>
+				<stop offset="0.4658" stop-color="#effaf0" stop-opacity="0.051"></stop>
+				<stop offset="0.4899" stop-color="#fffdff" stop-opacity="0"></stop>
+				<stop offset="0.6106" stop-color="#ffa7f1" stop-opacity="0"></stop>
+				<stop offset="1" stop-color="#ff8bec" stop-opacity="0.698"></stop>
+			</radialGradient>
+			<rect id="Rectangle_42_bx" rx="0" ry="0" x="0" y="0" width="1479" height="854">
+			</rect>
+		</svg>
 	<svg class="Rectangle_3">
 		<rect id="Rectangle_3" rx="0" ry="0" x="0" y="0" width="680" height="160">
 		</rect>
 	</svg>
-	<div id="n_____________________________">
-		<span>                                                Retrieve It</span>
+	<div id="Projects">
+		<span>Projects</span>
 	</div>
-	<svg class="Rectangle_14">
-		<rect id="Rectangle_14" rx="0" ry="0" x="0" y="0" width="134" height="36">
+	<svg class="Rectangle_20">
+		<rect onclick="application.goToTargetView(event)" id="Rectangle_20" rx="0" ry="0" x="0" y="0" width="496" height="128">
 		</rect>
 	</svg>
-	<div id="n_________Delete">
-		<span>         Delete</span>
+	<svg class="Rectangle_21">
+		<rect onclick="application.goToTargetView(event)" id="Rectangle_21" rx="0" ry="0" x="0" y="0" width="496" height="144">
+		</rect>
+	</svg>
+	<div id="n_____________________________">
+		<span>                             Manage Projects</span>
 	</div>
-	<div id="Search_Results_List" class="Search_Results_List">
-		<div id="n_______Select___">
-			<span>       Select   </span>
-		</div>
-		<div id="Search_Results_Menus" class="Search_Results_Menus">
-			<div id="Menu_-_Dark" class="Menu___Dark">
-				<div id="Menus_-_Background">
-					<svg class="Rectangle">
-						<rect id="Rectangle" rx="12" ry="12" x="0" y="0" width="552" height="434">
-						</rect>
-					</svg>
-				</div>
-				<div id="Menus_-_Action" class="Menus___Action">
-					<svg class="BG">
-						<rect id="BG" rx="0" ry="0" x="0" y="0" width="456" height="45">
-						</rect>
-					</svg>
-					<div id="Menus_-_Separator_-_Regular" class="Menus___Separator___Regular">
-						<svg class="ControlsMenusxLight_-_Separato">
-							<rect id="ControlsMenusxLight_-_Separato" rx="0" ry="0" x="0" y="0" width="456" height="1">
-							</rect>
-						</svg>
-						<svg class="Rectangle_b">
-							<rect id="Rectangle_b" rx="0" ry="0" x="0" y="0" width="456" height="0.5">
-							</rect>
-						</svg>
-					</div>
-					<div id="Symbol">
-						<span>􀋂</span>
-					</div>
-					<div id="Label">
-						<span>Title</span>
-					</div>
-					<div id="Symbol_cc">
-						<span>􀯻</span>
-					</div>
-				</div>
-				<div id="Menus_-_Action_cd" class="Menus___Action">
-					<svg class="BG_ce">
-						<rect id="BG_ce" rx="0" ry="0" x="0" y="0" width="456" height="45">
-						</rect>
-					</svg>
-					<div id="Menus_-_Separator_-_Regular_cf" class="Menus___Separator___Regular">
-						<svg class="ControlsMenusxLight_-_Separato_cg">
-							<rect id="ControlsMenusxLight_-_Separato_cg" rx="0" ry="0" x="0" y="0" width="456" height="1">
-							</rect>
-						</svg>
-						<svg class="Rectangle_ch">
-							<rect id="Rectangle_ch" rx="0" ry="0" x="0" y="0" width="456" height="0.5">
-							</rect>
-						</svg>
-					</div>
-					<div id="Symbol_ci">
-						<span>􀋂</span>
-					</div>
-					<div id="Label_cj">
-						<span>Title</span>
-					</div>
-					<div id="Symbol_ck">
-						<span>􀯻</span>
-					</div>
-				</div>
-				<div id="Menus_-_Action_cl" class="Menus___Action">
-					<svg class="BG_cm">
-						<rect id="BG_cm" rx="0" ry="0" x="0" y="0" width="456" height="45">
-						</rect>
-					</svg>
-					<div id="Menus_-_Separator_-_Regular_cn" class="Menus___Separator___Regular">
-						<svg class="ControlsMenusxLight_-_Separato_co">
-							<rect id="ControlsMenusxLight_-_Separato_co" rx="0" ry="0" x="0" y="0" width="456" height="1">
-							</rect>
-						</svg>
-						<svg class="Rectangle_cp">
-							<rect id="Rectangle_cp" rx="0" ry="0" x="0" y="0" width="456" height="0.5">
-							</rect>
-						</svg>
-					</div>
-					<div id="Symbol_cq">
-						<span>􀋂</span>
-					</div>
-					<div id="Label_cr">
-						<span>Deploy multi-platform Images</span>
-					</div>
-					<div id="Symbol_cs">
-						<span>􀯻</span>
-					</div>
-				</div>
-				<div id="Menus_-_Separator" class="Menus___Separator">
-					<svg class="Rectangle_cu">
-						<rect id="Rectangle_cu" rx="0" ry="0" x="0" y="0" width="456" height="8">
-						</rect>
-					</svg>
-				</div>
-				<div id="Menus_-_Action_cv" class="Menus___Action">
-					<svg class="BG_cw">
-						<rect id="BG_cw" rx="0" ry="0" x="0" y="0" width="456" height="45">
-						</rect>
-					</svg>
-					<div id="Menus_-_Separator_-_Regular_cx" class="Menus___Separator___Regular">
-						<svg class="ControlsMenusxLight_-_Separato_cy">
-							<rect id="ControlsMenusxLight_-_Separato_cy" rx="0" ry="0" x="0" y="0" width="456" height="1">
-							</rect>
-						</svg>
-						<svg class="Rectangle_cz">
-							<rect id="Rectangle_cz" rx="0" ry="0" x="0" y="0" width="456" height="0.5">
-							</rect>
-						</svg>
-					</div>
-					<div id="Symbol_c">
-						<span>􀋂</span>
-					</div>
-					<div id="Label_c">
-						<span>Ducks API</span>
-					</div>
-					<div id="Symbol_da">
-						<span>􀆅</span>
-					</div>
-				</div>
-				<div id="Menus_-_Action_c" class="Menus___Action">
-					<svg class="BG_c">
-						<rect id="BG_c" rx="0" ry="0" x="0" y="0" width="456" height="45">
-						</rect>
-					</svg>
-					<div id="Menus_-_Separator_-_Regular_c" class="Menus___Separator___Regular">
-						<svg class="ControlsMenusxLight_-_Separato_c">
-							<rect id="ControlsMenusxLight_-_Separato_c" rx="0" ry="0" x="0" y="0" width="456" height="1">
-							</rect>
-						</svg>
-						<svg class="Rectangle_c">
-							<rect id="Rectangle_c" rx="0" ry="0" x="0" y="0" width="456" height="0.5">
-							</rect>
-						</svg>
-					</div>
-					<div id="Symbol_db">
-						<span>􀋂</span>
-					</div>
-					<div id="Label_da">
-						<span>Http Status Codes</span>
-					</div>
-					<div id="Symbol_dc">
-						<span>􀆅</span>
-					</div>
-				</div>
-				<div id="Menus_-_Action_db" class="Menus___Action">
-					<svg class="BG_dc">
-						<rect id="BG_dc" rx="0" ry="0" x="0" y="0" width="456" height="45">
-						</rect>
-					</svg>
-					<div id="Menus_-_Separator_-_Regular_dd" class="Menus___Separator___Regular">
-						<svg class="ControlsMenusxLight_-_Separato_de">
-							<rect id="ControlsMenusxLight_-_Separato_de" rx="0" ry="0" x="0" y="0" width="456" height="1">
-							</rect>
-						</svg>
-						<svg class="Rectangle_df">
-							<rect id="Rectangle_df" rx="0" ry="0" x="0" y="0" width="456" height="0.5">
-							</rect>
-						</svg>
-					</div>
-					<div id="Symbol_dg">
-						<span>􀋂</span>
-					</div>
-					<div id="Label_dh">
-						<span>Occeaecat</span>
-					</div>
-					<div id="Symbol_di">
-						<span>􀆅</span>
-					</div>
-				</div>
-				<div id="Menus_-_Action_dj" class="Menus___Action">
-					<svg class="BG_dk">
-						<rect id="BG_dk" rx="0" ry="0" x="0" y="0" width="456" height="45">
-						</rect>
-					</svg>
-					<div id="Menus_-_Separator_-_Regular_dl" class="Menus___Separator___Regular">
-						<svg class="ControlsMenusxLight_-_Separato_dm">
-							<rect id="ControlsMenusxLight_-_Separato_dm" rx="0" ry="0" x="0" y="0" width="456" height="1">
-							</rect>
-						</svg>
-						<svg class="Rectangle_dn">
-							<rect id="Rectangle_dn" rx="0" ry="0" x="0" y="0" width="456" height="0.5">
-							</rect>
-						</svg>
-					</div>
-					<div id="Symbol_do">
-						<span>􀋂</span>
-					</div>
-					<div id="Label_dp">
-						<span>Excepteur sint occaecat</span>
-					</div>
-					<div id="Symbol_dq">
-						<span>􀆅</span>
-					</div>
-				</div>
-				<div id="Menus_-_Separator_dr" class="Menus___Separator">
-					<svg class="Rectangle_ds">
-						<rect id="Rectangle_ds" rx="0" ry="0" x="0" y="0" width="456" height="8">
-						</rect>
-					</svg>
-				</div>
-				<div id="Menus_-_Action_dt" class="Menus___Action">
-					<svg class="BG_du">
-						<rect id="BG_du" rx="0" ry="0" x="0" y="0" width="456" height="45">
-						</rect>
-					</svg>
-					<div id="Menus_-_Separator_-_Regular_dv" class="Menus___Separator___Regular">
-						<svg class="ControlsMenusxLight_-_Separato_dw">
-							<rect id="ControlsMenusxLight_-_Separato_dw" rx="0" ry="0" x="0" y="0" width="456" height="1">
-							</rect>
-						</svg>
-						<svg class="Rectangle_dx">
-							<rect id="Rectangle_dx" rx="0" ry="0" x="0" y="0" width="456" height="0.5">
-							</rect>
-						</svg>
-					</div>
-					<div id="Symbol_dy">
-						<span>􀋂</span>
-					</div>
-					<div id="Label_dz">
-						<span>Title</span>
-					</div>
-					<div id="Symbol_d">
-						<span>􀆅</span>
-					</div>
-				</div>
-				<div id="Menus_-_Action_d" class="Menus___Action">
-					<svg class="BG_d">
-						<rect id="BG_d" rx="0" ry="0" x="0" y="0" width="456" height="45">
-						</rect>
-					</svg>
-					<div id="Menus_-_Separator_-_Regular_d" class="Menus___Separator___Regular">
-						<svg class="ControlsMenusxLight_-_Separato_d">
-							<rect id="ControlsMenusxLight_-_Separato_d" rx="0" ry="0" x="0" y="0" width="456" height="1">
-							</rect>
-						</svg>
-						<svg class="Rectangle_d">
-							<rect id="Rectangle_d" rx="0" ry="0" x="0" y="0" width="456" height="0.5">
-							</rect>
-						</svg>
-					</div>
-					<div id="Symbol_ea">
-						<span>􀋂</span>
-					</div>
-					<div id="Label_d">
-						<span>Adobe Photoshop</span>
-					</div>
-					<div id="Symbol_eb">
-						<span>􀆅</span>
-					</div>
-				</div>
-				<div id="Menus_-_Action_ea" class="Menus___Action">
-					<svg class="BG_ea">
-						<rect id="BG_ea" rx="0" ry="0" x="0" y="0" width="456" height="45">
-						</rect>
-					</svg>
-					<div id="Menus_-_Separator_-_Regular_eb" class="Menus___Separator___Regular">
-						<svg class="ControlsMenusxLight_-_Separato_ec">
-							<rect id="ControlsMenusxLight_-_Separato_ec" rx="0" ry="0" x="0" y="0" width="456" height="1">
-							</rect>
-						</svg>
-						<svg class="Rectangle_ed">
-							<rect id="Rectangle_ed" rx="0" ry="0" x="0" y="0" width="456" height="0.5">
-							</rect>
-						</svg>
-					</div>
-					<div id="Symbol_ee">
-						<span>􀋂</span>
-					</div>
-					<div id="Label_ef">
-						<span>Adobe XD</span>
-					</div>
-					<div id="Symbol_eg">
-						<span>􀆅</span>
-					</div>
-				</div>
-			</div>
-		</div>
+	<div id="n______________________________b">
+		<span>                                     View Documents</span>
 	</div>
-	<img id="Image_19" src="Image_19.png" srcset="Image_19.png 1x, Image_19@2x.png 2x">
+	<img onclick="application.goToTargetView(event)" id="Image_19" src="../image/Image_19.png" srcset="../image/Image_19.png 1x, ../image/Image_19@2x.png 2x">
 		
-	<div onclick="application.goToTargetView(event)" id="Anemone_03" class="Anemone_03">
-		<img id="Anemone_03_ej" src="Anemone_03_ej.png" srcset="Anemone_03_ej.png 1x, Anemone_03_ej@2x.png 2x">
-			
-	</div>
 </div>
 </body>
 </html>

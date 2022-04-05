@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Retrieve - Options – Flow3</title>
+<title>Confirm Delete – Flow3</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Retrieve - Options – Flow3;
-		--web-view-id: Retrieve_-_Options__Flow3;
+		--web-view-name: Confirm Delete – Flow3;
+		--web-view-id: Confirm_Delete__Flow3;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Retrieve_-_Options__Flow3;
+		--web-view-ids: Confirm_Delete__Flow3;
 	}
 	* {
 		margin: 0;
@@ -21,14 +21,14 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Retrieve_-_Options__Flow3 {
+	#Confirm_Delete__Flow3 {
 		position: absolute;
 		width: 768px;
 		height: 1024px;
-		background-color: rgba(255,255,255,1);
+		background-color: rgba(15,14,14,1);
 		overflow: hidden;
-		--web-view-name: Retrieve - Options – Flow3;
-		--web-view-id: Retrieve_-_Options__Flow3;
+		--web-view-name: Confirm Delete – Flow3;
+		--web-view-id: Confirm_Delete__Flow3;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
@@ -42,174 +42,610 @@
 		}
 	
 	}
-	#Artwork_1 {
-		opacity: 0.56;
-		fill: transparent;
+	#Rectangle_1 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
 	}
-	.Artwork_1 {
+	.Rectangle_1 {
+		position: absolute;
+		overflow: visible;
+		width: 625px;
+		height: 277px;
+		left: 72px;
+		top: 182px;
+	}
+	#confirm_delete_current_data__ {
+		left: 157px;
+		top: 219px;
+		position: absolute;
+		overflow: visible;
+		width: 479px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(38,153,251,1);
+	}
+	#Yes {
+		left: 165px;
+		top: 352px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		height: 41px;
+		transition: all 0.30000001192092896s snap;
+		--web-animation: fadein 0.30000001192092896s snap;
+		--web-action-type: page;
+		--web-action-target: organize/Projects_Main.html;
+		cursor: pointer;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(251,38,38,1);
+	}
+	#No {
+		left: 428px;
+		top: 352px;
+		position: absolute;
+		overflow: visible;
+		width: 157px;
+		height: 41px;
+		transition: all 0.30000001192092896s snap;
+		--web-animation: fadein 0.30000001192092896s snap;
+		--web-action-type: page;
+		--web-action-target: retrieve/Retrieve_Search_Results.html;
+		cursor: pointer;
+		text-align: center;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(0,0,0,1);
+	}
+	#View_documentation_here {
+		opacity: 0.43;
+		left: 175px;
+		top: 280px;
+		position: absolute;
+		overflow: visible;
+		width: 419px;
+		height: 36px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(112,112,112,1);
+	}
+	#Header {
+		position: absolute;
+		width: 757.001px;
+		height: 48px;
+		left: 11px;
+		top: 9px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: auth/User___Flow3.html;
+		cursor: pointer;
+	}
+	#METADATA {
+		display: none;
+		left: -65px;
+		top: -36px;
+		position: absolute;
 		overflow: hidden;
-		position: absolute;
-		width: 1479px;
-		height: 854px;
-		transform: matrix(1,0,0,1,-355.5,85) rotate(90deg);
-		transform-origin: center;
-		left: 0px;
-		top: 0px;
-	}
-	#Rectangle_27_bx {
-		fill: url(#Rectangle_27_bx);
-	}
-	.Rectangle_27_bx {
-		position: absolute;
-		overflow: visible;
-		width: 854px;
-		height: 1479px;
-		left: 0px;
-		top: 0px;
-	}
-	#icon_retrieve {
-		position: absolute;
-		width: 90px;
-		height: 90px;
-		left: 655px;
-		top: 755px;
-		overflow: visible;
-		transition: all 0.30000001192092896s linear;
-		--web-animation: fadein 0.30000001192092896s linear;
-		--web-action-type: page;
-		--web-action-target: Retrieve___Flow3.html;
-		cursor: pointer;
-	}
-	#icon_retrieve_bz {
-		position: absolute;
-		width: 90px;
-		height: 90px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#x_close {
-		position: absolute;
-		width: 28px;
-		height: 28px;
-		left: 731px;
-		top: 741px;
-		overflow: visible;
-		transition: all 0.30000001192092896s linear;
-		--web-animation: fadein 0.30000001192092896s linear;
-		--web-action-type: page;
-		--web-action-target: Anemone_Features___Flow3.html;
-		cursor: pointer;
-	}
-	#x_close_b {
-		position: absolute;
-		width: 28px;
-		height: 28px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Anemone_03 {
-		position: absolute;
-		width: 162px;
-		height: 137px;
-		left: 538px;
-		top: 841px;
-		overflow: visible;
-		--web-animation: fadein 0.30000001192092896s ease-in-out;
-		--web-action-type: page;
-		--web-action-target: Anemone_Start___Flow3.html;
-		cursor: pointer;
-	}
-	#Anemone_03_b {
-		opacity: 0.985;
-		position: absolute;
-		width: 162px;
-		height: 137px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#fileOps_03 {
-		position: absolute;
-		width: 70px;
-		height: 71px;
-		left: 584px;
-		top: 734px;
-		overflow: visible;
-		transition: all 0.30000001192092896s wind-up;
-		--web-animation: fadein 0.30000001192092896s wind-up;
-		--web-action-type: page;
-		--web-action-target: Search___Flow3.html;
-		cursor: pointer;
-	}
-	#fileOps_15 {
-		position: absolute;
-		width: 71px;
-		height: 71px;
-		left: 674px;
-		top: 670px;
-		overflow: visible;
-		transition: all 0.30000001192092896s snap;
-		--web-animation: fadein 0.30000001192092896s snap;
-		--web-action-type: page;
-		--web-action-target: Projects_Main.html;
-		cursor: pointer;
-	}
-	#fileOps_08 {
-		position: absolute;
-		width: 71px;
-		height: 72px;
-		left: 603px;
-		top: 683px;
-		overflow: visible;
-		transition: all 0.30000001192092896s snap;
-		--web-animation: fadein 0.30000001192092896s snap;
-		--web-action-type: page;
-		--web-action-target: Organize___Flow3.html;
-		cursor: pointer;
-	}
-	#Categorize {
-		left: 569px;
-		top: 679px;
-		position: absolute;
-		overflow: visible;
-		width: 70px;
-		height: 14px;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: italic;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
-		color: rgba(27,40,226,1);
+		font-size: 3px;
 	}
-	#Search {
-		left: 522px;
-		top: 741px;
+	#Title_TAGH6 {
+		left: 0px;
+		top: 13px;
 		position: absolute;
 		overflow: visible;
-		width: 70px;
-		height: 14px;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: italic;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(27,40,226,1);
+		width: 80px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: ./About___Start_Flow3.html;
+		cursor: pointer;
+		line-height: 25px;
+		margin-top: -4.5px;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(251,247,234,1);
+		letter-spacing: -0.1px;
 	}
-	#Save_to_Project {
-		left: 674px;
-		top: 643px;
+	#Tabs {
+		position: absolute;
+		width: 360.907px;
+		height: 43px;
+		left: 230.536px;
+		top: 2.5px;
+		overflow: visible;
+	}
+	#METADATA_b {
+		display: none;
+		left: 0.001px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#PLACEHOLDER_Tab_Item {
+		position: absolute;
+		width: 43px;
+		height: 42px;
+		left: 240.09px;
+		top: 0px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_ca {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area {
+		position: absolute;
+		width: 42px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_cb {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Placement_Area {
+		opacity: 0;
+		fill: rgba(251,247,234,1);
+	}
+	.Placement_Area {
 		position: absolute;
 		overflow: visible;
-		width: 70px;
-		height: 31px;
-		text-align: center;
-		font-family: Segoe UI;
-		font-style: italic;
+		width: 42px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+	}
+	#Bar {
+		opacity: 0;
+		fill: rgba(0,0,0,1);
+	}
+	.Bar {
+		position: absolute;
+		overflow: visible;
+		width: 42px;
+		height: 2px;
+		left: 0px;
+		top: 40px;
+	}
+	#Label {
+		left: 0px;
+		top: 10px;
+		position: absolute;
+		overflow: visible;
+		width: 44px;
+		white-space: nowrap;
+		line-height: 22px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
-		color: rgba(27,40,226,1);
+		font-size: 16px;
+		color: rgba(206,206,206,1);
+	}
+	#Tab_Item_STATEACTIVE {
+		position: absolute;
+		width: 43px;
+		height: 43px;
+		left: 317.907px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_cd {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_ce {
+		position: absolute;
+		width: 43px;
+		height: 43px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_cf {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Placement_Area_STATEACTIVE {
+		opacity: 0;
+		fill: rgba(251,247,234,1);
+	}
+	.Placement_Area_STATEACTIVE {
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		height: 43px;
+		left: 0px;
+		top: 0px;
+	}
+	#Bar_STATEACTIVE {
+		fill: rgba(0,0,0,1);
+		stroke: rgba(255,243,199,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Bar_STATEACTIVE {
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		height: 2px;
+		left: 0px;
+		top: 41px;
+	}
+	#Label_ci {
+		left: 0.557px;
+		top: 10px;
+		position: absolute;
+		overflow: visible;
+		width: 40px;
+		white-space: nowrap;
+		line-height: 22px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,243,199,1);
+	}
+	#Tab_Item_STATEDEFAULT {
+		position: absolute;
+		width: 63.182px;
+		height: 43px;
+		left: 90.282px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_ck {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_cl {
+		position: absolute;
+		width: 43px;
+		height: 43px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_cm {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Placement_Area_STATEDEFAULT {
+		opacity: 0;
+		fill: rgba(251,247,234,1);
+	}
+	.Placement_Area_STATEDEFAULT {
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		height: 43px;
+		left: 0px;
+		top: 0px;
+	}
+	#Bar_STATEDEFAULT {
+		opacity: 0;
+		fill: rgba(0,0,0,1);
+	}
+	.Bar_STATEDEFAULT {
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		height: 2px;
+		left: 0px;
+		top: 41px;
+	}
+	#Label_cp {
+		left: 0.182px;
+		top: 10px;
+		position: absolute;
+		overflow: visible;
+		width: 64px;
+		white-space: nowrap;
+		line-height: 22px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(206,206,206,1);
+	}
+	#Tab_Item_STATEDEFAULT_cq {
+		position: absolute;
+		width: 48.464px;
+		height: 43px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_cr {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_cs {
+		position: absolute;
+		width: 43px;
+		height: 43px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_ct {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Placement_Area_STATEDEFAULT_cu {
+		opacity: 0;
+		fill: rgba(251,247,234,1);
+	}
+	.Placement_Area_STATEDEFAULT_cu {
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		height: 43px;
+		left: 0px;
+		top: 0px;
+	}
+	#Bar_STATEDEFAULT_cv {
+		opacity: 0;
+		fill: rgba(0,0,0,1);
+	}
+	.Bar_STATEDEFAULT_cv {
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		height: 2px;
+		left: 0px;
+		top: 41px;
+	}
+	#Label_cw {
+		left: 0.464px;
+		top: 10px;
+		position: absolute;
+		overflow: visible;
+		width: 49px;
+		white-space: nowrap;
+		line-height: 22px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(206,206,206,1);
+	}
+	#Button_DISPLAY_ELEMENTSLabelSI {
+		position: absolute;
+		width: 144px;
+		height: 48px;
+		left: 613.001px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_cy {
+		display: none;
+		left: -0.001px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSLabelSIZE {
+		fill: rgba(255,243,199,1);
+	}
+	.Area_DISPLAY_ELEMENTSLabelSIZE {
+		position: absolute;
+		overflow: visible;
+		width: 144px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#Label_c {
+		left: 6.999px;
+		top: 13px;
+		position: absolute;
+		overflow: visible;
+		width: 131px;
+		white-space: nowrap;
+		line-height: 22px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(0,0,0,1);
+	}
+	#Icon_DISPLAY_ELEMENTSLabelICON {
+		position: absolute;
+		width: 20.538px;
+		height: 20px;
+		left: 107.462px;
+		top: 14px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_c {
+		display: none;
+		left: 0.537px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_DISPLAY_ELEMENTSLabelICON {
+		opacity: 0;
+		fill: rgba(253,73,198,0.349);
+	}
+	.Area_DISPLAY_ELEMENTSLabelICON {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0.538px;
+		top: 0px;
+	}
+	#Icon {
+		position: absolute;
+		width: 20px;
+		height: 17.444px;
+		left: 0px;
+		top: 1.278px;
+		overflow: visible;
+	}
+	#n_7d251cf-9f30-4617-a098-90ad1 {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(15,14,13,1);
+		stroke-width: 1.9135715961456299px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_7d251cf-9f30-4617-a098-90ad1 {
+		overflow: visible;
+		position: absolute;
+		width: 21.914px;
+		height: 19.357px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
 	}
 </style>
 <script id="applicationScript">
@@ -1033,7 +1469,7 @@ var Application = function() {
 		}
 		
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -2601,7 +3037,7 @@ var Application = function() {
 		
 		// navigate to page
 		if (self.application==false || targetType=="page") {
-			document.location.href = "./" + actionTargetValue;
+			document.location.href = "../" + actionTargetValue;
 			return;
 		}
 
@@ -3124,50 +3560,146 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Retrieve_-_Options__Flow3">
-	<svg class="Artwork_1" viewBox="-739.5 -427 1479 854">
-		</null>
+<div id="Confirm_Delete__Flow3">
+	<svg class="Rectangle_1">
+		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="625" height="277">
+		</rect>
 	</svg>
-		<svg class="Rectangle_27_bx">
-			<radialGradient id="Rectangle_27_bx" spreadMethod="pad" x1="0" x2="0" y1="0" y2="0">
-				<stop offset="0" stop-color="#00d413" stop-opacity="0.8"></stop>
-				<stop offset="0.0586" stop-color="#11d622" stop-opacity="0.745"></stop>
-				<stop offset="0.163" stop-color="#3ede4d" stop-opacity="0.604"></stop>
-				<stop offset="0.301" stop-color="#89ea92" stop-opacity="0.369"></stop>
-				<stop offset="0.4658" stop-color="#effaf0" stop-opacity="0.051"></stop>
-				<stop offset="0.4899" stop-color="#fffdff" stop-opacity="0"></stop>
-				<stop offset="0.6106" stop-color="#ffa7f1" stop-opacity="0"></stop>
-				<stop offset="1" stop-color="#ff8bec" stop-opacity="0.698"></stop>
-			</radialGradient>
-			<rect id="Rectangle_27_bx" rx="0" ry="0" x="0" y="0" width="1479" height="854">
-			</rect>
-		</svg>
-	<div onclick="application.goToTargetView(event)" id="icon_retrieve" class="icon_retrieve">
-		<img id="icon_retrieve_bz" src="icon_retrieve_bz.png" srcset="icon_retrieve_bz.png 1x, icon_retrieve_bz@2x.png 2x">
-			
+	<div id="confirm_delete_current_data__">
+		<span>confirm: delete current data?  </span>
 	</div>
-	<div onclick="application.goToTargetView(event)" id="x_close" class="x_close">
-		<img id="x_close_b" src="x_close_b.png" srcset="x_close_b.png 1x, x_close_b@2x.png 2x">
-			
+	<div onclick="application.goToTargetView(event)" id="Yes">
+		<span>Yes</span>
 	</div>
-	<div onclick="application.goToTargetView(event)" id="Anemone_03" class="Anemone_03">
-		<img id="Anemone_03_b" src="Anemone_03_b.png" srcset="Anemone_03_b.png 1x, Anemone_03_b@2x.png 2x">
-			
+	<div onclick="application.goToTargetView(event)" id="No">
+		<span>No</span>
 	</div>
-	<img onclick="application.goToTargetView(event)" id="fileOps_03" src="fileOps_03.png" srcset="fileOps_03.png 1x, fileOps_03@2x.png 2x">
-		
-	<img onclick="application.goToTargetView(event)" id="fileOps_15" src="fileOps_15.png" srcset="fileOps_15.png 1x, fileOps_15@2x.png 2x">
-		
-	<img onclick="application.goToTargetView(event)" id="fileOps_08" src="fileOps_08.png" srcset="fileOps_08.png 1x, fileOps_08@2x.png 2x">
-		
-	<div id="Categorize">
-		<span>Categorize</span>
+	<div id="View_documentation_here">
+		<span>View documentation here</span>
 	</div>
-	<div id="Search">
-		<span>Search</span>
-	</div>
-	<div id="Save_to_Project">
-		<span>Save to Project</span>
+	<div onclick="application.goToTargetView(event)" id="Header">
+		<div id="METADATA">
+			<span>{"config":{},"nodeName":"Header","type":"Group","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-24T20:35:54.264Z"}</span>
+		</div>
+		<div onclick="application.goToTargetView(event)" id="Title_TAGH6">
+			<span>Anemone</span>
+		</div>
+		<div id="Tabs">
+			<div id="METADATA_b">
+				<span>{"config":{},"type":"Tabs","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-24T20:35:54.227Z","nodeName":"Tabs"}</span>
+			</div>
+			<div id="PLACEHOLDER_Tab_Item">
+				<div id="METADATA_ca">
+					<span>{"config":{},"nodeName":"[PLACEHOLDER] Tab Item","type":"Group","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-24T20:35:54.193Z"}</span>
+				</div>
+				<div id="Area">
+					<div id="METADATA_cb">
+						<span>{"config":{},"nodeName":"Area","type":"Group","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-24T20:35:54.191Z"}</span>
+					</div>
+					<svg class="Placement_Area">
+						<rect id="Placement_Area" rx="0" ry="0" x="0" y="0" width="42" height="42">
+						</rect>
+					</svg>
+					<svg class="Bar">
+						<rect id="Bar" rx="1" ry="1" x="0" y="0" width="42" height="2">
+						</rect>
+					</svg>
+				</div>
+				<div id="Label">
+					<span>Label</span>
+				</div>
+			</div>
+			<div id="Tab_Item_STATEACTIVE">
+				<div id="METADATA_cd">
+					<span>{"config":{"STATE":"ACTIVE"},"type":"TabItem","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-24T20:35:54.206Z","nodeName":"Tab Item [STATE=ACTIVE]"}</span>
+				</div>
+				<div id="Area_ce">
+					<div id="METADATA_cf">
+						<span>{"config":{},"nodeName":"Area","type":"Group","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-24T20:35:54.201Z"}</span>
+					</div>
+					<svg class="Placement_Area_STATEACTIVE">
+						<rect id="Placement_Area_STATEACTIVE" rx="0" ry="0" x="0" y="0" width="43" height="43">
+						</rect>
+					</svg>
+					<svg class="Bar_STATEACTIVE">
+						<rect id="Bar_STATEACTIVE" rx="1" ry="1" x="0" y="0" width="43" height="2">
+						</rect>
+					</svg>
+				</div>
+				<div id="Label_ci">
+					<span>Back</span>
+				</div>
+			</div>
+			<div id="Tab_Item_STATEDEFAULT">
+				<div id="METADATA_ck">
+					<span>{"config":{},"type":"TabItem","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-24T20:35:54.217Z","nodeName":"Tab Item [STATE=DEFAULT]"}</span>
+				</div>
+				<div id="Area_cl">
+					<div id="METADATA_cm">
+						<span>{"config":{},"nodeName":"Area","type":"Group","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-24T20:35:54.213Z"}</span>
+					</div>
+					<svg class="Placement_Area_STATEDEFAULT">
+						<rect id="Placement_Area_STATEDEFAULT" rx="0" ry="0" x="0" y="0" width="43" height="43">
+						</rect>
+					</svg>
+					<svg class="Bar_STATEDEFAULT">
+						<rect id="Bar_STATEDEFAULT" rx="1" ry="1" x="0" y="0" width="43" height="2">
+						</rect>
+					</svg>
+				</div>
+				<div id="Label_cp">
+					<span>Product</span>
+				</div>
+			</div>
+			<div id="Tab_Item_STATEDEFAULT_cq">
+				<div id="METADATA_cr">
+					<span>{"config":{},"type":"TabItem","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-24T20:35:54.222Z","nodeName":"Tab Item [STATE=DEFAULT]"}</span>
+				</div>
+				<div id="Area_cs">
+					<div id="METADATA_ct">
+						<span>{"config":{},"nodeName":"Area","type":"Group","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-24T20:35:54.219Z"}</span>
+					</div>
+					<svg class="Placement_Area_STATEDEFAULT_cu">
+						<rect id="Placement_Area_STATEDEFAULT_cu" rx="0" ry="0" x="0" y="0" width="43" height="43">
+						</rect>
+					</svg>
+					<svg class="Bar_STATEDEFAULT_cv">
+						<rect id="Bar_STATEDEFAULT_cv" rx="1" ry="1" x="0" y="0" width="43" height="2">
+						</rect>
+					</svg>
+				</div>
+				<div id="Label_cw">
+					<span>Home</span>
+				</div>
+			</div>
+		</div>
+		<div id="Button_DISPLAY_ELEMENTSLabelSI">
+			<div id="METADATA_cy">
+				<span>{"config":{"STYLE":"STYLE3"},"type":"Button","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-24T20:35:54.262Z","nodeName":"Button [DISPLAY_ELEMENTS=Label][SIZE=MEDIUM][STATE=DEFAULT][STYLE=STYLE3]"}</span>
+			</div>
+			<svg class="Area_DISPLAY_ELEMENTSLabelSIZE">
+				<rect id="Area_DISPLAY_ELEMENTSLabelSIZE" rx="24" ry="24" x="0" y="0" width="144" height="48">
+				</rect>
+			</svg>
+			<div id="Label_c">
+				<span>UserInformation</span>
+			</div>
+			<div id="Icon_DISPLAY_ELEMENTSLabelICON">
+				<div id="METADATA_c">
+					<span>{"config":{"STATE":"DEFAULT","STYLE":"STYLE3"},"type":"Icon","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-03-24T20:35:54.259Z","nodeName":"Icon [DISPLAY_ELEMENTS=Label][ICON=feather/heart][SIZE=MEDIUM][STATE=DEFAULT][STYLE=STYLE3]"}</span>
+				</div>
+				<svg class="Area_DISPLAY_ELEMENTSLabelICON">
+					<rect id="Area_DISPLAY_ELEMENTSLabelICON" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+				<div id="Icon">
+					<svg class="n_7d251cf-9f30-4617-a098-90ad1" viewBox="1.482 2.869 20 17.444">
+						<path id="n_7d251cf-9f30-4617-a098-90ad1" d="M 19.93899917602539 4.410999774932861 C 17.88400077819824 2.355000019073486 14.55099964141846 2.355000019073486 12.49600028991699 4.410999774932861 L 11.48099994659424 5.425000190734863 L 10.46700000762939 4.410999774932861 C 8.411999702453613 2.355000019073486 5.078999996185303 2.355000019073486 3.023000001907349 4.410999774932861 C 0.9679999947547913 6.466000080108643 0.9679999947547913 9.798999786376953 3.023000001907349 11.85499954223633 L 4.038000106811523 12.86900043487549 L 11.48099994659424 20.3129997253418 L 18.92499923706055 12.86900043487549 L 19.93899917602539 11.85499954223633 C 21.99600028991699 9.798999786376953 21.99600028991699 6.466000080108643 19.93899917602539 4.410999774932861 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 </body>
