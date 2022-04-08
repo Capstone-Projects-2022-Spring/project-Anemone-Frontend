@@ -1,8 +1,8 @@
 import './App.css';
 import Home from './Home';
 import * as React from 'react';
-import rainbowBrain from './image/Anemone_03_b.png';
-import { BottomNavigation, BottomNavigationAction } from '@mui/material';
+import Fab from '@mui/material/Fab';
+import IssueCollector from './IssueCollector';
 
 
 export default function App() {
@@ -12,27 +12,32 @@ export default function App() {
 
 
   return (
-    <div className="App">
+    <div className="About">
       <header className="App-header">
+      {/* <Home sx={{ position: 'relative', mt: 1, height: 10 }}></Home> */}
         <>
-          {getHome ? <Home />: <><img src={rainbowBrain} className="" alt=""/>
-            <p>
-            Edit <code>src/App.jsx</code> and save to reload.
-            </p>
+          {getHome ? <Home />: <><Home sx={{ position: 'relative', mt: 1, height: 10 }}></Home>
+            <h2>About Us</h2>
+			<p>You bring thoughts; we'll bring thinking</p>
+            <p>Together, let's expand capacity.</p>
             <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://anemone.avalonbloom.com/api/v1/"
             target="_blank"
             rel="noopener noreferrer"
             >
-            Learn React for Project Anemone
+            Want to integrate? Check out our API
             </a>
+            <p></p>
             </>
           }
       </>
       </header>
       <footer>
-        <Home sx={{ position: 'absolute', bottom: 6, right: 6 }}></Home>
+        <Fab variant="extended" size="small" color="primary" aria-label="add">
+          <IssueCollector sx={{ position: 'fixed'}}/>
+          We love feedback
+        </Fab>
       </footer>
     </div>
   );
