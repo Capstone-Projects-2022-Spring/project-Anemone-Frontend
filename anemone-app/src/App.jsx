@@ -1,7 +1,6 @@
 import './App.css';
 import Home from './Home';
 import * as React from 'react';
-// import rainbowBrain from './image/Anemone_03_b.png';
 import Fab from '@mui/material/Fab';
 import IssueCollector from './IssueCollector';
 
