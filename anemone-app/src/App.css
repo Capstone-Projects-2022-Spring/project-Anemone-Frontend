@@ -17,6 +17,7 @@
     color: #61dafb;
 }
 
+<<<<<<< HEAD
 .About {
     background-image:
         url("./image/Placement_Area_ASSETheroSIZEDe@2x.png");
@@ -33,3 +34,40 @@
     font-size: calc(10px + 2vmin);
     color: white;
 }
+=======
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.About {
+  background-image:
+    url("./image/icon-collect@1x.png");
+  background-size: "cover";
+  height: 100vh;
+  margin-top: -70px;
+  font-size:50px;
+  background-repeat:no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  }
+  
+.icon_collect {
+  height: 90px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 166px;
+  width: 90px;
+}
+>>>>>>> 7984b4e4edf1cca3c61f2a2f90e6f6aee65cb0d9
