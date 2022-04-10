@@ -1,14 +1,9 @@
 import React from "react";
-<<<<<<< HEAD
-=======
-//import "./IconCollect.css";
->>>>>>> 7984b4e4edf1cca3c61f2a2f90e6f6aee65cb0d9
 import CollectBrain from '../image/icon-collect@1x.png';
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import Box from '@mui/material/Box';
-<<<<<<< HEAD
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
@@ -38,6 +33,7 @@ export default function CollectSpeedDial() {
                 onOpen={handleOpen}
                 open={open}
             >
+
                 {actions.map((action) => (
           <SpeedDialAction
             key={action.name}
@@ -47,21 +43,6 @@ export default function CollectSpeedDial() {
             onClick={handleClose}
           />
         ))}
-
-
-=======
-
-
-
-export default function CollectSpeedDial() {
-    return (
-        <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
-            <SpeedDial
-                ariaLabel="SpeedDial anemone example"
-                sx={{ position: 'relative', bottom: 16, right: 16 }}
-                icon={<SpeedDialIcon icon={<img src={CollectBrain} style={{ position: "absolute", bottom: 0, right: 0 }} className="CollectBrain" alt="" />} />}
-            >
->>>>>>> 7984b4e4edf1cca3c61f2a2f90e6f6aee65cb0d9
             </SpeedDial>
         </Box>
     );
