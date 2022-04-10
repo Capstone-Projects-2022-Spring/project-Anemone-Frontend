@@ -4,14 +4,14 @@ import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import RainbowBrain from './image/rainbowBrain.png';
-// import CollectIcon from './Collect';
+ import CollectIcon from './components/collectFeature';
 // import './Organize';
 // import './Modify';
 import RetrieveIcon from './Retrieve';
 
 export default function HomeSpeedDial(){
     const actions = [
-        // { icon: <CollectIcon />, name: 'Collect'},
+         { icon: <CollectIcon />, name: 'Collect'},
         // { icon: <OrganizeIcon />, name: 'Organize'},
         // { icon: <ModifyIcon />, name: 'Modify'},
         { icon: <RetrieveIcon />, name: 'Retrieve'},
