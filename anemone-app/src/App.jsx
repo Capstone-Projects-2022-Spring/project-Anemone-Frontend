@@ -4,7 +4,6 @@ import * as React from 'react';
 import Fab from '@mui/material/Fab';
 import IssueCollector from './IssueCollector';
 
-
 export default function App() {
   // const[getRainbowBrain, setRainbowBrain] = React.useState("./image/Anemone_03_b.png");
   const [value, setValue] = React.useState(1);
