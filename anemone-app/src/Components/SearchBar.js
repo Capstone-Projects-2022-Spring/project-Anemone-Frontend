@@ -22,7 +22,7 @@ function SearchBar({ placeholder, data }) {
       setFilteredData(newFilter);
     }
   };
-
+ //new changes.
   const clearInput = () => {
     setFilteredData([]);
     setWordEntered("");
