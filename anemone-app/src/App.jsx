@@ -14,7 +14,6 @@ export default function App() {
   return (
     <div className="About">
       <header className="App-header">
-      {/* <Home sx={{ position: 'relative', mt: 1, height: 10 }}></Home> */}
         <>
           {getHome ? <Home />: <><Home sx={{ position: 'relative', mt: 1, height: 10 }}></Home>
             <h2>About Us</h2>

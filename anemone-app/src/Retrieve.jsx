@@ -6,6 +6,9 @@ import SpeedDialAction from '@mui/material/SpeedDialAction';
 import SearchIcon from '@mui/icons-material/SearchOutlined';
 import SavedSearchIcon from '@mui/icons-material/SavedSearchOutlined';
 import RetrieveBrain from './image/retrieveBrain.png';
+import SearchBar from "./Components/SearchBar";
+import BookData from "./Data.json";
+import './App.css';
 
 
 const actions = [
@@ -13,12 +16,22 @@ const actions = [
   { icon: <SavedSearchIcon />, name: 'Save Search' },
 ];
 
+function useSearchBar(actions){
+    if(actions.SearchIcon){
+        return(
+            <div className="Search">
+                <SearchBar placeholder="Enter the key words: " data={BookData} />
+            </div>
+        );
+    }
+}
+
 export default function RetrieveSpeedDial() {
   return (
     <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
       <SpeedDial
         ariaLabel="SpeedDial basic example"
-        sx={{ position: 'relative', start: 16, right: 46 }}
+        sx={{ position: 'relative', center: 16, right: 46 }}
         icon={<SpeedDialIcon icon={<img src={RetrieveBrain} className="RetrieveBrain" alt=""/>} />}
       >
         {actions.map((action) => (
@@ -27,6 +40,7 @@ export default function RetrieveSpeedDial() {
             icon={action.icon}
             tooltipTitle={action.name}
           />
+        //   for if the action is SearchIcon clicked navigate to SearchBar Page useSearchBar()
         ))}
       </SpeedDial>
     </Box>
