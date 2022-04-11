@@ -1,8 +1,6 @@
 import './App.css';
 import AnemoneHomeView from './AnemoneHomeView';
 import * as React from 'react';
-import Fab from '@mui/material/Fab';
-import IssueCollector from './IssueCollector';
 import AboutView from './AboutView';
 // import Search from './Search';
 import Collect from './components/Collect';
@@ -64,7 +62,6 @@ export default function App() {
                 <>
                     {
                         <>
-                        {/* <h1>Discover data</h1> */}
                         {view(value)}
                     </>
                     }
