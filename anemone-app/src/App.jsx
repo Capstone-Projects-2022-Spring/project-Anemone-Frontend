@@ -47,7 +47,6 @@ export default function App() {
         switch (value) {
             case 0: return <h1>Discover Data</h1>
             case 1: return <AnemoneHomeView/>
-            // case 1: return <Search/>
             case 2: return <Collect/>
            case 10: return <Search/>
             case 3: return <Retrieve goView={test}/>
