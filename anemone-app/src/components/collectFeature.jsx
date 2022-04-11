@@ -1,5 +1,5 @@
 import React from "react";
-import CollectBrain from '../image/icon-collect@1x.png';
+import CollectBrain from '../image/collectBrain.png';
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
@@ -24,10 +24,10 @@ export default function CollectSpeedDial() {
     const handleClose = () => setOpen(false);
 
     return (
-        <Box sx={{ height: 300, transform: 'translateZ(0px)', flexGrow: 1 }}>
+        <Box sx={{ height: 150, transform: 'translateZ(0px)', flexGrow: 1 }}>
             <SpeedDial
                 ariaLabel="SpeedDial anemone collect"
-                sx={{ position: 'relative', bottom: 16, right: 70 }}
+                sx={{ position: 'relative', bottom: 16, right: 170 }}
                 icon={<SpeedDialIcon icon={<img src={CollectBrain} className="CollectBrain" alt="" />} />}
                 onClose={handleClose}
                 onOpen={handleOpen}
