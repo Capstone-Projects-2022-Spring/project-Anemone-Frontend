@@ -6,10 +6,8 @@ import IssueCollector from './IssueCollector';
 
 
 export default function App() {
-  // const[getRainbowBrain, setRainbowBrain] = React.useState("./image/Anemone_03_b.png");
-  const [value, setValue] = React.useState(1);
-  const [getHome, setHome] = React.useState(false);
-
+    const [value, setValue] = React.useState(1);
+    const [getHome, setHome] = React.useState(false);
 
   return (
     <div className="About">
