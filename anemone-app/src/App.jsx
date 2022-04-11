@@ -23,10 +23,10 @@ export default function App() {
         switch (value) {
             case 0: return <h1>Discover Data</h1>
             case 1: return <AnemoneHomeView/>
-            // case 1: return <Search/>
             case 2: return <Collect/>
             case 3: return <Retrieve/>
-            // case 3: return <NameComponent name={componentView} setComponentView={setComponentViewContext} />
+            // case 4: return <Search/>
+            // case 5: return <NameComponent name={componentView} setComponentView={setComponentViewContext} />
             default: return <AboutView/>
         }
     }
