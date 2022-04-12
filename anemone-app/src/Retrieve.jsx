@@ -32,6 +32,7 @@ export default function RetrieveSpeedDial() {
             key={action.name}
             icon={action.icon}
             tooltipTitle={action.name}
+            onClick={handleClose}
           />
         ))}
       </SpeedDial>
