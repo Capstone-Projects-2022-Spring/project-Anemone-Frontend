@@ -1,27 +1,5 @@
 .App {
-    text-align: center;
-}
-
-/* .App-header {
-  background-color: #f1ce7c;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-.App-link {
-    color: #61dafb;
-}
-
-
-.About {
-    background-image:
-        url("./image/Placement_Area_ASSETheroSIZEDe@2x.png");
-    background-size: "cover";
+    align-self: center;
     height: 100vh;
     margin-top: -70px;
     font-size: 50px;
@@ -33,4 +11,31 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+}
+
+.App-header {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f8cb9f;
+  justify-content: center;
+}
+
+.App-link {
+    color: #98e2f6;
+    align-self: center;
+}
+
+.About {
+    background-image:
+        url("./image/Placement_Area_ASSETheroSIZEDe.png");
+    background-size: "initial";
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
 }

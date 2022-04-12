@@ -13,7 +13,11 @@ body {
       monospace;
   }
   .container{
+    width: 1800px;
     background-color: rgb(0, 0, 0);
+    height: 850px;
+    padding-top: 50px;
+    overflow: auto;
   }
   .head{
     text-align: center;
