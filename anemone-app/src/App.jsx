@@ -11,7 +11,7 @@ import * as PropTypes from "prop-types";
 import {Button, BottomNavigation, BottomNavigationAction, Paper} from "@mui/material";
 import SearchBar from "./components/SearchBar";
 import BookData from "./Data.json";
-
+import SearchResult from './components/SearchResult';
 AnemoneHomeView.propTypes = {src: PropTypes.string};
 
 function NameComponent(props) {
@@ -52,6 +52,7 @@ export default function App() {
             // case 1: return <Search/>
             case 2: return <Collect/>
            case 10: return <Search/>
+           case 11: return <SearchResult/>
             case 3: return <Retrieve goView={test}/>
             // case 3: return <NameComponent name={componentView} setComponentView={setComponentViewContext} />
             default: return <AboutView/>
