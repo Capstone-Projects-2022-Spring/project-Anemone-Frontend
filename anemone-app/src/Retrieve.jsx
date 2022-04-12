@@ -6,6 +6,7 @@ import SpeedDialAction from '@mui/material/SpeedDialAction';
 import SearchIcon from '@mui/icons-material/SearchOutlined';
 import SavedSearchIcon from '@mui/icons-material/SavedSearchOutlined';
 import RetrieveBrain from './image/retrieveBrain.png';
+import {Button, BottomNavigation, BottomNavigationAction, Paper} from "@mui/material";
 
 const actions = [
   { icon: <SearchIcon />, name: 'Search' },
