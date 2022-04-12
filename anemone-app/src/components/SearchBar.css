@@ -1,0 +1,113 @@
+.SearchBar{
+    background-color: black;
+  }
+  .searchInputs {
+      margin-top: 24px;
+      display: flex;
+      margin-left: 131px;
+    }
+  
+    .search input {
+      background-color: rgb(194, 193, 193);
+      border: 0;
+      border-radius: 2px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;  
+      font-size: 18px;
+      padding: 15px;
+      height: 30px;
+      width: 300px;
+    }
+  
+    .searchIcon {
+      height: 60px;
+      width: 50px;
+      background-color: rgb(255, 255, 255);
+      display: grid;
+      place-items: center;
+    }
+  
+    input:focus {
+      outline: none;
+    }
+    .searchIcon svg {
+      font-size: 35px;
+    }
+  
+    .dataResult {
+      margin-left: 131px;
+      margin-top: 1px;
+      width: 300px;
+      height: 200px;
+      background-color: rgb(194, 193, 193);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+  
+    .dataResult::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .dataResult .dataItem {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      color: rgb(0, 0, 0);
+      font-size: medium;
+    }
+  
+    .dataItem p {
+      margin-left: 20px;
+    }
+    a {
+      text-decoration: none;
+    }
+  
+    a:hover {
+      background-color: lightgrey;
+    }
+  
+    #clearBtn {
+      cursor: pointer;
+    }
+    .addIcon{
+      height: 60px;
+      width: 50px;
+      background-color: rgb(255, 255, 255);
+      display: grid;
+      place-items: center;
+    }
+  
+    .Menubar{
+        justify-content: end;
+        display: grid;
+        grid-gap: 66px;
+        text-align: center;
+        width: 44vw;
+        grid-template-columns: repeat(5,auto);
+        margin-top: -287px;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        align-items: center;
+        margin-left: -234px;
+  
+    }
+    .Search{
+        margin-top: 100;
+      margin-left: 63px;
+      font-size: 30px;
+      color: rgb(0, 0, 0);
+     text-align: center;
+    }
+  
+    .OutputInfo{
+        background-color: rgb(0, 0, 0);
+          width: 500px;
+          height: 500px;
+          margin-left: 90px;
+    }
+    .Image{
+        margin-left: 390px;
+    } 

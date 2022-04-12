@@ -8,25 +8,42 @@ import Retrieve from './Retrieve';
 import * as PropTypes from "prop-types";
 import { Button, BottomNavigation, BottomNavigationAction, Paper} from "@mui/material";
 import { Box } from '@mui/system';
+import SearchBar from "./components/SearchBar";
+import BookData from "./Data.json";
 
 
 AnemoneHomeView.propTypes = {src: PropTypes.string};
 
+function Search() {
+    return(
+    <SearchBar placeholder="Enter the key words: " data={BookData} />
+    );
+}
+
 export default function App() {
-    const [componentView, setComponentView] = React.useState('About');
+    const [value, setValue] = React.useState(1);
+    const [componentView, setComponentView] = React.useState();
     const setComponentViewContext = (context) => {
         console.log(context);
         setComponentView(context);
     };
+
+    function test(name){
+        if(name === 'Search'){
+           setValue(10);
+        }
+        if(name === 'Save Search'){
+            setValue(11);
+         }
+    }
+
     function view(value) {
         // eslint-disable-next-line default-case
         switch (value) {
             case 'Discover': return <h1>Discover Data</h1>
-            // case 1: return <AnemoneHomeView/>
             case 'Collect': return <Collect/>
-            case 'Retrieve': return <Retrieve/>
-            // case 4: return <Search/>
-            // case 5: return <NameComponent name={componentView} setComponentView={setComponentViewContext} />
+            case 'Retrieve': return <Retrieve goView={test}/>
+            case 10: return <Search/>
             default: return <AboutView/>
         }
     }
@@ -48,6 +65,7 @@ export default function App() {
                             setComponentViewContext(newValue);
                         }}
                     >
+                        <BottomNavigationAction label="Retrieve" icon={<Button />} />
                         <BottomNavigationAction label="About" icon={<Button />} />
                     </BottomNavigation>
                 </Paper>
