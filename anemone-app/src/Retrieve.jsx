@@ -6,18 +6,25 @@ import SpeedDialAction from '@mui/material/SpeedDialAction';
 import SearchIcon from '@mui/icons-material/SearchOutlined';
 import SavedSearchIcon from '@mui/icons-material/SavedSearchOutlined';
 import RetrieveBrain from './image/retrieveBrain.png';
-
+import SearchBar from './components/SearchBar';
 
 const actions = [
   { icon: <SearchIcon />, name: 'Search' },
   { icon: <SavedSearchIcon />, name: 'Save Search' },
 ];
 
-export default function RetrieveSpeedDial() {
+<div className="Bluebutton">
+         
+            <SearchIcon id="searchbtn" onClick={<SearchBar />} />
+  
+        </div>
+
+export default function RetrieveSpeedDial({goView}) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
   return (
+    
     <Box sx={{ height: 150, transform: 'translateZ(0px)', flexGrow: 1 }}>
       <SpeedDial
         ariaLabel="SpeedDial basic example"
@@ -32,9 +39,12 @@ export default function RetrieveSpeedDial() {
             key={action.name}
             icon={action.icon}
             tooltipTitle={action.name}
+            onClick={()=>{goView(action.name)}}
           />
         ))}
       </SpeedDial>
     </Box>
+
+    
   );
 }

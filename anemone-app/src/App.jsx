@@ -9,7 +9,8 @@ import Collect from './components/Collect';
 import Retrieve from './Retrieve';
 import * as PropTypes from "prop-types";
 import {Button, BottomNavigation, BottomNavigationAction, Paper} from "@mui/material";
-
+import SearchBar from "./components/SearchBar";
+import BookData from "./Data.json";
 
 AnemoneHomeView.propTypes = {src: PropTypes.string};
 
@@ -19,6 +20,15 @@ function NameComponent(props) {
     </>;
 }
 
+function Search() {
+    return(
+    <SearchBar placeholder="Enter the key words: " data={BookData} />
+    );
+}
+
+
+
+
 export default function App() {
     const [value, setValue] = React.useState(1);
     const [componentView, setComponentView] = React.useState();
@@ -26,6 +36,14 @@ export default function App() {
         console.log(context);
         setComponentView(context);
     };
+    function test(name){
+        if(name === 'Search'){
+           setValue(10);
+        }
+        if(name === 'Save Search'){
+            setValue(11);
+         }
+    }
     function view(value) {
         // eslint-disable-next-line default-case
         switch (value) {
@@ -33,7 +51,8 @@ export default function App() {
             case 1: return <AnemoneHomeView/>
             // case 1: return <Search/>
             case 2: return <Collect/>
-            case 3: return <Retrieve/>
+           case 10: return <Search/>
+            case 3: return <Retrieve goView={test}/>
             // case 3: return <NameComponent name={componentView} setComponentView={setComponentViewContext} />
             default: return <AboutView/>
         }
