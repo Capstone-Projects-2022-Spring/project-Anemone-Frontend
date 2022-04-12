@@ -19,7 +19,7 @@ const actions = [
   
         </div>
 
-export default function RetrieveSpeedDial({goView}) {
+export default function RetrieveSpeedDial(props) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -39,7 +39,7 @@ export default function RetrieveSpeedDial({goView}) {
             key={action.name}
             icon={action.icon}
             tooltipTitle={action.name}
-            onClick={()=>{goView(action.name)}}
+            onClick={()=>{props.goView(action.name)}}
           />
         ))}
       </SpeedDial>

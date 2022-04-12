@@ -8,9 +8,8 @@ import RainbowBrain from './image/rainbowBrain.png';
 // import './Organize';
 // import './Modify';
 import RetrieveIcon from './Retrieve';
-import { borderRight } from '@mui/system';
 
-export default function HomeSpeedDial(){
+export default function HomeSpeedDial(props){
     const actions = [
          { icon: <CollectIcon />, name: 'Collect'},
         // { icon: <OrganizeIcon />, name: 'Organize'},
@@ -39,6 +38,7 @@ export default function HomeSpeedDial(){
                 key={action.name}
                 icon={action.icon}
                 tooltipTitle={action.name}
+                onClick={()=>{props.setParentContext(action.name)}}
                 />
             ))}
             </SpeedDial>

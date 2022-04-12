@@ -9,14 +9,16 @@ import * as PropTypes from "prop-types";
 import {Button, BottomNavigation, BottomNavigationAction, Paper} from "@mui/material";
 import SearchBar from "./components/SearchBar";
 import BookData from "./Data.json";
+import { Box } from '@mui/system';
+
 
 AnemoneHomeView.propTypes = {src: PropTypes.string};
 
-function NameComponent(props) {
-    return <><h1>{props.name}</h1>
-    <button onClick={()=>{props.setName('Fay')}}>SET FAY</button>
-    </>;
-}
+// function NameComponent(props) {
+//     return <><h1>{props.name}</h1>
+//     <button onClick={()=>{props.setName('Fay')}}>SET FAY</button>
+//     </>;
+// }
 
 function Search() {
     return(
@@ -29,7 +31,7 @@ function Search() {
 
 export default function App() {
     const [value, setValue] = React.useState(1);
-    const [componentView, setComponentView] = React.useState();
+    const [componentView, setComponentView] = React.useState('About');
     const setComponentViewContext = (context) => {
         console.log(context);
         setComponentView(context);
@@ -47,10 +49,13 @@ export default function App() {
         switch (value) {
             case 0: return <h1>Discover Data</h1>
             case 1: return <AnemoneHomeView/>
-            case 2: return <Collect/>
            case 10: return <Search/>
-            case 3: return <Retrieve goView={test}/>
             // case 3: return <NameComponent name={componentView} setComponentView={setComponentViewContext} />
+            case 'Discover': return <h1>Discover Data</h1>
+            case 'Collect': return <Collect/>
+            case 'Retrieve': return <Retrieve goView={test}/>
+            // case 4: return <Search/>
+            // case 5: return <NameComponent name={componentView} setComponentView={setComponentViewContext} />
             default: return <AboutView/>
         }
     }
@@ -58,27 +63,20 @@ export default function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <>
-                    {
-                        <>
-                        {view(value)}
-                    </>
-                    }
-                </>
+                <>{<>{view(componentView)}</>}</>
             </header>
             <footer>
                 <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+                    <Box sx={{ position: 'relative', bottom: 250, left: 1200, right: 0 }} elevation={3}>
+                        <AnemoneHomeView setParentContext={setComponentViewContext}/>
+                    </Box>
                     <BottomNavigation
                         showLabels
-                        value={value}
+                        value={componentView}
                         onChange={(event, newValue) => {
-                            setValue(newValue);
+                            setComponentViewContext(newValue);
                         }}
                     >
-                        <BottomNavigationAction label="Market" icon={<Button />} />
-                        <BottomNavigationAction label="Anemone" icon={<Button />} />
-                        <BottomNavigationAction label="Collect" icon={<Button />} />
-                        <BottomNavigationAction label="Retrieve" icon={<Button />} />
                         <BottomNavigationAction label="About" icon={<Button />} />
                     </BottomNavigation>
                 </Paper>
