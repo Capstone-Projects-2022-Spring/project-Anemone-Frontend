@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
 .App {
     align-self: center;
     height: 100vh;
@@ -10,7 +12,7 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .App-header {
