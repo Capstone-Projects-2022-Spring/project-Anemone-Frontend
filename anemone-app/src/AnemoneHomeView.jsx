@@ -4,10 +4,11 @@ import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import RainbowBrain from './image/rainbowBrain.png';
- import CollectIcon from './components/collectFeature';
+ import CollectIcon from './components/Collect';
 // import './Organize';
 // import './Modify';
 import RetrieveIcon from './Retrieve';
+import { borderRight } from '@mui/system';
 
 export default function HomeSpeedDial(){
     const actions = [
@@ -22,10 +23,11 @@ export default function HomeSpeedDial(){
     const handleClose = () => setOpen(false);
     
     return(
-        <Box sx={{ height: 120, transform: 'translateZ(0px)', flexGrow: 1 }}>
+        <Box
+        sx={{ height: 5, transform: 'translateZ(0px)', flexGrow: 1 }}>
             <SpeedDial
             ariaLabel="Anemone Rainbow Brain"
-            sx={{ position: 'absolute', right: 6 }}
+            // sx={{ position: 'absolute', center: 0, right: 1 }}
             icon={<SpeedDialIcon icon={<img src={RainbowBrain} className="" alt=""/>} />}
             onClose={handleClose}
             onOpen={handleOpen}
