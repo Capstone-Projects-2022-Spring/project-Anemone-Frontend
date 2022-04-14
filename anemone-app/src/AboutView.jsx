@@ -2,32 +2,16 @@ import * as React from 'react';
 import './App.css';
 import Fab from '@mui/material/Fab';
 import IssueCollector from './IssueCollector';
-import { Fade } from '@mui/material';
 
-const style = {
-    fadeIn: {
-        animation: 'x 1s',
-    }
-}
 
 export default function AboutView() {
-    const [isChecked, setIsChecked] = React.useState(false);
-    const handleIsChecked = () => setIsChecked(true);
-    function transitionSentence(boolean){
-        <Fade 
-            in={isChecked} 
-            onAnimationStart={handleIsChecked}>
-            We'll bring thinking
-        </Fade>
-    }
-
     return (
         <div className="About">
             <header className="App-header">
                 <>
                     <h1>About Us</h1>
                     <h4>You bring thoughts;</h4> 
-                    {transitionSentence(true)}                      
+                    <h4>We'll bring thinking</h4>                      
                     <h5 alignment="center">Together, let's expand capacity.</h5>
                     <a
                         className="App-link"

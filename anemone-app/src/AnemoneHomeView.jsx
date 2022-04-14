@@ -1,19 +1,19 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import SpeedDial from '@mui/material/SpeedDial';
+import {SpeedDial, Fab} from '@mui/material/';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
-import SpeedDialIcon from '@mui/material/SpeedDialIcon';
-import RainbowBrain from './image/rainbowBrain.png';
+import RainbowBrainIcon from './components/RainbowBrainIcon';
  import CollectIcon from './components/Collect';
-// import './Organize';
-// import './Modify';
 import RetrieveIcon from './Retrieve';
+
+const actions = [
+    { icon: <CollectIcon />, name: 'Collect'},
+    { icon: <RetrieveIcon />, name: 'Retrieve'},
+];
 
 export default function HomeSpeedDial(props){
     const actions = [
          { icon: <CollectIcon />, name: 'Collect'},
-        // { icon: <OrganizeIcon />, name: 'Organize'},
-        // { icon: <ModifyIcon />, name: 'Modify'},
         { icon: <RetrieveIcon />, name: 'Retrieve'},
     ];
     const [direction, setDirection] = React.useState('right');
@@ -25,9 +25,10 @@ export default function HomeSpeedDial(props){
         <Box
         sx={{ height: 5, transform: 'translateZ(0px)', flexGrow: 1 }}>
             <SpeedDial
+            hasBackdrop={false}
             ariaLabel="Anemone Rainbow Brain"
-            // sx={{ position: 'absolute', center: 0, right: 1 }}
-            icon={<SpeedDialIcon icon={<img src={RainbowBrain} className="" alt=""/>} />}
+            sx={{ position: 'absolute', center: 10 }}
+            icon={<RainbowBrainIcon/>}
             onClose={handleClose}
             onOpen={handleOpen}
             open={open}

@@ -2,7 +2,6 @@ import './App.css';
 import AnemoneHomeView from './AnemoneHomeView';
 import * as React from 'react';
 import AboutView from './AboutView';
-// import Search from './Search';
 import Collect from './components/Collect';
 import Retrieve from './Retrieve';
 import * as PropTypes from "prop-types";
@@ -13,19 +12,14 @@ import { Box } from '@mui/system';
 
 
 AnemoneHomeView.propTypes = {src: PropTypes.string};
+Retrieve.propTypes = {src: PropTypes.string};
 
-// function NameComponent(props) {
-//     return <><h1>{props.name}</h1>
-//     <button onClick={()=>{props.setName('Fay')}}>SET FAY</button>
-//     </>;
-// }
 
 function Search() {
     return(
     <SearchBar placeholder="Enter the key words: " data={BookData} />
     );
 }
-
 
 
 
@@ -36,26 +30,21 @@ export default function App() {
         console.log(context);
         setComponentView(context);
     };
+
+
     function test(name){
         if(name === 'Search'){
-           setValue(10);
+            setValue('Search')
         }
-        if(name === 'Save Search'){
-            setValue(11);
-         }
     }
+
     function view(value) {
         // eslint-disable-next-line default-case
         switch (value) {
-            case 0: return <h1>Discover Data</h1>
-            case 1: return <AnemoneHomeView/>
-           case 10: return <Search/>
-            // case 3: return <NameComponent name={componentView} setComponentView={setComponentViewContext} />
-            case 'Discover': return <h1>Discover Data</h1>
+            case 'About': return <AnemoneHomeView/>
+            case 'Search': return <Search goView={test}/>
             case 'Collect': return <Collect/>
-            case 'Retrieve': return <Retrieve goView={test}/>
-            // case 4: return <Search/>
-            // case 5: return <NameComponent name={componentView} setComponentView={setComponentViewContext} />
+            case 'Retrieve': return <Retrieve/>
             default: return <AboutView/>
         }
     }
