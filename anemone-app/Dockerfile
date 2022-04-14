@@ -12,13 +12,13 @@ WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 
 # install app dependencies
-COPY package.json ./
-#COPY package-lock.json ./
+COPY ./anemone-app/package.json ./
+COPY ./anemone-app/package-lock.json ./
 RUN npm install
 RUN npm install react-scripts@3.4.1 -g --silent
 
 # add app
-COPY . ./
+COPY ./anemone-app ./
 RUN npm run build
 
 # this next stage is the final deliverable. It is just a simple
