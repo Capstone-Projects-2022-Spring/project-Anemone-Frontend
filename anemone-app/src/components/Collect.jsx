@@ -51,7 +51,8 @@ const DragAndDrop = props => {
                 onDragOver={event => handleDragOver(event)}
                 onDragEnter={event => handleDragEnter(event)}
             >
-                <p>Drag your files here</p>
+                <h3 style={{ textAlign: "left" }}>
+                    Drag here </h3>
                 <ol>
                     {data.fileList.map(file => {
                         return (
@@ -106,27 +107,16 @@ export default function CollectSpeedDial() {
 
     return (
         <Box sx={{ height: 150, transform: 'translateZ(0px)', flexGrow: 1 }}>
-            <h1>React drag-and-drop component</h1>
             <DragAndDrop data={data} dispatch={dispatch} />
             <SpeedDial
                 ariaLabel="SpeedDial anemone collect"
-                sx={{ position: 'relative', bottom: 16, right: 170 }}
+                sx={{ position: 'relative', bottom: 36, right: 190 }}
                 icon={<SpeedDialIcon icon={<img src={CollectBrain} className="CollectBrain" alt="" />} />}
                 onClose={handleClose}
                 onOpen={handleOpen}
                 open={open}
             >
-                <Button variant="text">Text</Button>
 
-                {actions.map((action) => (
-          <SpeedDialAction
-            key={action.name}
-            icon={action.icon}
-            tooltipTitle={action.name}
-            tooltipOpen
-            onClick={handleClose}
-          />
-        ))}
             </SpeedDial>
         </Box>
     );

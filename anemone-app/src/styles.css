@@ -6,15 +6,15 @@
 }
 
 .drag-drop-zone {
-    display: flex;
-    justify-content: flex-start;
-    width: 90%;
-    height: 300px;
+    display: left;
+    justify-content: left;
+    width: 50%;
+    height: 50px;
     padding: 2rem;
     background: #f2f2f2;
     border-radius: 0.5rem;
-
- 
+    align-items: left;
+    color: #0e0d0c;
 }
 
 .drag-drop-zone.inside-drag-area {
