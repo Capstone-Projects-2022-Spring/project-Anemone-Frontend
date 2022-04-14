@@ -11,6 +11,7 @@ import IconButton from '@mui/material/IconButton';
 
 import "../styles.css";
 
+
 const DragAndDrop = props => {
     const { data, dispatch } = props;
 
@@ -115,6 +116,7 @@ export default function CollectSpeedDial() {
                 onOpen={handleOpen}
                 open={open}
             >
+                <Button variant="text">Text</Button>
 
                 {actions.map((action) => (
           <SpeedDialAction
