@@ -1,0 +1,22 @@
+.App {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.drag-drop-zone {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    height: 300px;
+    padding: 2rem;
+    background: #f2f2f2;
+    border-radius: 0.5rem;
+
+ 
+}
+
+.drag-drop-zone.inside-drag-area {
+    opacity: 0.7;
+}
