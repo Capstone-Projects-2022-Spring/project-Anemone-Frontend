@@ -12,6 +12,7 @@ import {Button, BottomNavigation, BottomNavigationAction, Paper} from "@mui/mate
 import SearchBar from "./components/SearchBar";
 import BookData from "./Data.json";
 import SearchResult from './components/SearchResult';
+import Vertification from './components/Vertification';
 AnemoneHomeView.propTypes = {src: PropTypes.string};
 
 function NameComponent(props) {
@@ -42,7 +43,7 @@ export default function App() {
         }
         if(name === 'Save Search'){
             setValue(11);
-         }
+        }
     }
     function view(value) {
         // eslint-disable-next-line default-case
@@ -52,7 +53,8 @@ export default function App() {
             // case 1: return <Search/>
             case 2: return <Collect/>
            case 10: return <Search/>
-           case 11: return <SearchResult/>
+        //    case 11: return <SearchResult/>
+           case 11: return <Vertification/>
             case 3: return <Retrieve goView={test}/>
             // case 3: return <NameComponent name={componentView} setComponentView={setComponentViewContext} />
             default: return <AboutView/>
