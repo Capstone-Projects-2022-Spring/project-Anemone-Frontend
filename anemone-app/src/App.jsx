@@ -13,6 +13,7 @@ import { Box } from '@mui/system';
 
 AnemoneHomeView.propTypes = {src: PropTypes.string};
 Retrieve.propTypes = {src: PropTypes.string};
+Collect.propTypes = {src: PropTypes.object};
 
 
 function Search() {
@@ -56,9 +57,9 @@ export default function App() {
             </header>
             <footer>
                 <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
-                    <Box sx={{ position: 'relative', bottom: 250, left: 1200, right: 0 }} elevation={3}>
+                <Box sx={{ position: 'relative', bottom: 250, left: 1200, right: 0 }} elevation={3}>
                         <AnemoneHomeView setParentContext={setComponentViewContext}/>
-                    </Box>
+                </Box>
                     <BottomNavigation
                         showLabels
                         value={componentView}

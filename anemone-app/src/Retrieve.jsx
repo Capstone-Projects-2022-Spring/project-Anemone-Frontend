@@ -4,7 +4,7 @@ import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import SearchIcon from '@mui/icons-material/SearchOutlined';
 import SavedSearchIcon from '@mui/icons-material/SavedSearchOutlined';
-import RetrieveBrainIcon from './components/RetrieveBrain';
+import RetrieveBrainIcon from './components/RetrieveBrainIcon';
 import SearchBar from './components/SearchBar';
 
 const actions = [
@@ -24,7 +24,7 @@ export default function RetrieveSpeedDial({goView}) {
     
     <Box sx={{ height: 150, transform: 'translateZ(0px)', flexGrow: 1 }}>
       <SpeedDial
-        ariaLabel="SpeedDial basic example"
+        ariaLabel="SpeedDial Anemone Home"
         sx={{ position: 'relative', start: 100, right: 26 }}
         icon={<RetrieveBrainIcon/>}
         onClose={handleClose}

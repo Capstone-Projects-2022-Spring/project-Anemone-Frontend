@@ -1,91 +1,42 @@
-import React from "react";
-import CollectBrain from '../image/collectBrain.png';
-import SpeedDial from '@mui/material/SpeedDial';
-import SpeedDialIcon from '@mui/material/SpeedDialIcon';
-import SpeedDialAction from '@mui/material/SpeedDialAction';
-import Box from '@mui/material/Box';
-import { styled } from '@mui/material/styles';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
+import React, {useState} from "react";
+import CollectBrainIcon from './CollectBrainIcon';
+import DragDropFiles from './DragDropFiles';
+import axios from 'axios';
+import { Input, IconButton } from "@mui/material";
+
+const fileTypes = ["JPG", "PNG", "GIF", "PDF", "MP4", "MOV"];
 
 
-import "../styles.css";
-
-
-const DragAndDrop = props => {
-    const { data, dispatch } = props;
-
-    const handleDragEnter = event => {
-        event.preventDefault();
-        dispatch({ type: "AddToDropZone", inDropZone: true });
-    };
-
-    const handleDragOver = event => {
-        event.preventDefault();
-        event.dataTransfer.dropEffect = "move";
-        dispatch({ type: "AddToDropZone", inDropZone: true });
-    };
-
-    const handleDrop = event => {
-        event.preventDefault();
-        let files = [...event.dataTransfer.files];
-        let files_with_preview = [];
-
-        files.map(file => {
-            file["preview"] = URL.createObjectURL(file);
-            files_with_preview.push(file);
-        });
-
-        if (files) {
-            dispatch({ type: "AddToList", files });
-            dispatch({ type: "AddToDropZone", inDropZone: false });
-        }
-    };
-
-    return (
-        <>
-            <div
-                id="container"
-                className={"drag-drop-zone"}
-                onDrop={event => handleDrop(event)}
-                onDragOver={event => handleDragOver(event)}
-                onDragEnter={event => handleDragEnter(event)}
-            >
-                <h3 style={{ textAlign: "left" }}>
-                    Drag here </h3>
-                <ol>
-                    {data.fileList.map(file => {
-                        return (
-                            <li key={file.name}>
-                                <p>{file.name}</p>
-                                <img
-                                    src={file.preview}
-                                    alt=""
-                                    style={{ width: "auto", height: 100 }}
-                                />
-                            </li>
-                        );
-                    })}
-                </ol>
-            </div>
-        </>
-    );
-};
-
-
-const Input = styled('input')({
-    display: 'none',
-});
-
-const actions = [
-    { icon: <IconButton />, name: 'Upload' },
-    { icon: <Button />, name: 'Upload button' },
-];
+function getUserAccount() {
+    return axios.get('http://localhost:8080/user/0');
+  }
+  
+  function getUserPermissions() {
+    return axios.get('http://localhost:8080/user/0/permissions');
+  }
+  
+  Promise.all([getUserAccount(), getUserPermissions()])
+    .then(function (results) {
+      const acct = results[0];
+      const perm = results[1];
+    });
 
 export default function CollectSpeedDial() {
-    const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    const [file, setFile] = useState(null);
+    const handleChange = (file) => {
+        setFile(file);
+    }
+
+    const postDocument = (file) => {
+        let json
+        axios.post('http://localhost:8080/documents', {Promise})
+            .then(function(response){
+                json = response.data
+                handleChange(file)
+                console.log(json)
+            })
+    }
+    const actions = [{postDocument}]
 
     const state = {
         inDropZone: false,
@@ -106,18 +57,21 @@ export default function CollectSpeedDial() {
     const [data, dispatch] = React.useReducer(reducer, state);
 
     return (
-        <Box sx={{ height: 150, transform: 'translateZ(0px)', flexGrow: 1 }}>
-            <DragAndDrop data={data} dispatch={dispatch} />
-            <SpeedDial
-                ariaLabel="SpeedDial anemone collect"
-                sx={{ position: 'relative', bottom: 36, right: 190 }}
-                icon={<SpeedDialIcon icon={<img src={CollectBrain} className="CollectBrain" alt="" />} />}
-                onClose={handleClose}
-                onOpen={handleOpen}
-                open={open}
+        <React.Fragment>
+        <label htmlFor="icon-button-file">
+            <Input accept={fileTypes} id="contained-button-file" multiple type="file" style={{ display: "none" }} />
+            <IconButton
+                size="small"
+                ariaLabel="Anemone collect"
+                sx={{ position: 'relative', bottom: 16, right: 170 }}
+                icon={<CollectBrainIcon/>}
             >
 
-            </SpeedDial>
-        </Box>
+                {actions.map((action) => (
+                    <DragDropFiles/>
+                ))}
+            </IconButton>
+         </label>
+         </React.Fragment>
     );
 }

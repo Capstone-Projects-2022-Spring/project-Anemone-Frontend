@@ -3,19 +3,16 @@ import Box from '@mui/material/Box';
 import {SpeedDial, Fab} from '@mui/material/';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import RainbowBrainIcon from './components/RainbowBrainIcon';
- import CollectIcon from './components/Collect';
-import RetrieveIcon from './Retrieve';
+ import Collect from './components/Collect';
+import Retrieve from './Retrieve';
 
 const actions = [
-    { icon: <CollectIcon />, name: 'Collect'},
-    { icon: <RetrieveIcon />, name: 'Retrieve'},
+    { icon: <Collect />, name: 'Collect'},
+    { icon: <Retrieve />, name: 'Retrieve'},
 ];
 
 export default function HomeSpeedDial(props){
-    const actions = [
-         { icon: <CollectIcon />, name: 'Collect'},
-        { icon: <RetrieveIcon />, name: 'Retrieve'},
-    ];
+
     const [direction, setDirection] = React.useState('right');
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
