@@ -1,22 +1,18 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import SpeedDial from '@mui/material/SpeedDial';
+import {SpeedDial, Fab} from '@mui/material/';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
-import SpeedDialIcon from '@mui/material/SpeedDialIcon';
-import RainbowBrain from './image/rainbowBrain.png';
- import CollectIcon from './components/Collect';
-// import './Organize';
-// import './Modify';
-import RetrieveIcon from './Retrieve';
-import { borderRight } from '@mui/system';
+import RainbowBrainIcon from './components/RainbowBrainIcon';
+ import Collect from './components/Collect';
+import Retrieve from './Retrieve';
 
-export default function HomeSpeedDial(){
-    const actions = [
-         { icon: <CollectIcon />, name: 'Collect'},
-        // { icon: <OrganizeIcon />, name: 'Organize'},
-        // { icon: <ModifyIcon />, name: 'Modify'},
-        { icon: <RetrieveIcon />, name: 'Retrieve'},
-    ];
+const actions = [
+    { icon: <Collect />, name: 'Collect'},
+    { icon: <Retrieve />, name: 'Retrieve'},
+];
+
+export default function HomeSpeedDial(props){
+
     const [direction, setDirection] = React.useState('right');
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -26,9 +22,10 @@ export default function HomeSpeedDial(){
         <Box
         sx={{ height: 5, transform: 'translateZ(0px)', flexGrow: 1 }}>
             <SpeedDial
+            hasBackdrop={false}
             ariaLabel="Anemone Rainbow Brain"
-            // sx={{ position: 'absolute', center: 0, right: 1 }}
-            icon={<SpeedDialIcon icon={<img src={RainbowBrain} className="" alt=""/>} />}
+            sx={{ position: 'absolute', center: 10 }}
+            icon={<RainbowBrainIcon/>}
             onClose={handleClose}
             onOpen={handleOpen}
             open={open}
@@ -39,6 +36,7 @@ export default function HomeSpeedDial(){
                 key={action.name}
                 icon={action.icon}
                 tooltipTitle={action.name}
+                onClick={()=>{props.setParentContext(action.name)}}
                 />
             ))}
             </SpeedDial>

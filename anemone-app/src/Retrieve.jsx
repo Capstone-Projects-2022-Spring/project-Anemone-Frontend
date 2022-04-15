@@ -1,11 +1,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import SpeedDial from '@mui/material/SpeedDial';
-import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import SearchIcon from '@mui/icons-material/SearchOutlined';
 import SavedSearchIcon from '@mui/icons-material/SavedSearchOutlined';
-import RetrieveBrain from './image/retrieveBrain.png';
+import RetrieveBrainIcon from './components/RetrieveBrainIcon';
 import SearchBar from './components/SearchBar';
 
 const actions = [
@@ -14,10 +13,8 @@ const actions = [
 ];
 
 <div className="Bluebutton">
-         
-            <SearchIcon id="searchbtn" onClick={<SearchBar />} />
-  
-        </div>
+  <SearchIcon id="searchbtn" onClick={<SearchBar />} />
+</div>
 
 export default function RetrieveSpeedDial({goView}) {
     const [open, setOpen] = React.useState(false);
@@ -27,9 +24,9 @@ export default function RetrieveSpeedDial({goView}) {
     
     <Box sx={{ height: 150, transform: 'translateZ(0px)', flexGrow: 1 }}>
       <SpeedDial
-        ariaLabel="SpeedDial basic example"
+        ariaLabel="SpeedDial Anemone Home"
         sx={{ position: 'relative', start: 100, right: 26 }}
-        icon={<SpeedDialIcon icon={<img src={RetrieveBrain} className="RetrieveBrain" alt=""/>} />}
+        icon={<RetrieveBrainIcon/>}
         onClose={handleClose}
         onOpen={handleOpen}
         open={open}
