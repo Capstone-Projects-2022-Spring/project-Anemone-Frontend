@@ -1,0 +1,32 @@
+.container{
+    width: 1360px;
+    height: 850px;
+    background-image: url(./image/vertfyback.svg);
+    text-align: center;
+    color:#707070;
+}
+.content{
+    margin: 0 auto;
+    width: 850px;
+    height: 550px;
+    background-image: url(./image/block.svg);
+    margin-top: 150px;
+}
+.float-right{
+    float: right;
+}
+.clear-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.title{
+    height: 130px;
+    font-size: 42px;
+    font-weight: normal;
+}
+.welcome{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+}

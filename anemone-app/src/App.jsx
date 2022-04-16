@@ -9,28 +9,30 @@ import * as PropTypes from "prop-types";
 import { Button, BottomNavigation, BottomNavigationAction, Paper } from "@mui/material";
 import SearchBar from "./components/SearchBar";
 import BookData from "./Data.json";
-// import Verification from './components/Verification';
 import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
 import { Box } from '@mui/system';
 import LoginPage from './components/LoginPage/LoginPage';
-
 AnemoneHomeView.propTypes = { src: PropTypes.string };
 Retrieve.propTypes = { src: PropTypes.string };
 Collect.propTypes = { src: PropTypes.object };
+import Vertification from './components/Vertification';
 
 function Search() {
     return (
         <SearchBar placeholder="Enter the key words: " data={BookData} />
     );
 }
-
+function Verify(){
+    return (
+        <Vertification/>
+    );
+}
 export default function App() {
     function test(name) {
         if (name === 'Search') {
             // setValue('Search')
         }
     }
-
     return (<>
         <Paper sx={{ position: 'fixed', bottom: 200,  right: 300 }} >
             <AnemoneHomeView token />
@@ -46,7 +48,7 @@ export default function App() {
                         <Route path="/collect" element={<Collect token />} />
                         {/*<Route path="/retrieve" element={<Retrieve token />} />*/}
                         <Route path="/about" element={<AboutView token />} />
-                        {/* <Route path="/verify" element={<Verification/>} /> */}
+                        <Route path="/verify" element={<Verification/>} />
                     </Routes>
             </div>
         </div>
