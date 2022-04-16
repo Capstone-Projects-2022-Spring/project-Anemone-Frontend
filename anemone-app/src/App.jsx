@@ -9,7 +9,7 @@ import {Button, BottomNavigation, BottomNavigationAction, Paper} from "@mui/mate
 import SearchBar from "./components/SearchBar";
 import BookData from "./Data.json";
 import { Box } from '@mui/system';
-
+import Vertification from './components/Vertification';
 
 AnemoneHomeView.propTypes = {src: PropTypes.string};
 Retrieve.propTypes = {src: PropTypes.string};
@@ -21,7 +21,12 @@ function Search() {
     <SearchBar placeholder="Enter the key words: " data={BookData} />
     );
 }
+function Verify(){
+    return (
+        <Vertification/>
+    );
 
+}
 
 
 export default function App() {
@@ -46,6 +51,8 @@ export default function App() {
             case 'Search': return <Search goView={test}/>
             case 'Collect': return <Collect/>
             case 'Retrieve': return <Retrieve/>
+            case 'Vertify' : return <Verify/>
+            // default: return <Verify/>
             default: return <AboutView/>
         }
     }
@@ -58,7 +65,7 @@ export default function App() {
             <footer>
                 <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
                 <Box sx={{ position: 'relative', bottom: 250, left: 1200, right: 0 }} elevation={3}>
-                        <AnemoneHomeView setParentContext={setComponentViewContext}/>
+                        <AnemoneHomeView setParentContext={setComponentViewContext} />
                 </Box>
                     <BottomNavigation
                         showLabels
