@@ -9,6 +9,7 @@ import {Button, BottomNavigation, BottomNavigationAction, Paper} from "@mui/mate
 import SearchBar from "./components/SearchBar";
 import BookData from "./Data.json";
 import { Box } from '@mui/system';
+import Register from "./components/Register";
 
 
 AnemoneHomeView.propTypes = {src: PropTypes.string};
@@ -26,7 +27,7 @@ function Search() {
 
 export default function App() {
     const [value, setValue] = React.useState(1);
-    const [componentView, setComponentView] = React.useState('About');
+    const [componentView, setComponentView] = React.useState('Register');
     const setComponentViewContext = (context) => {
         console.log(context);
         setComponentView(context);
@@ -46,6 +47,7 @@ export default function App() {
             case 'Search': return <Search goView={test}/>
             case 'Collect': return <Collect/>
             case 'Retrieve': return <Retrieve/>
+            case 'Register': return <Register/>
             default: return <AboutView/>
         }
     }
@@ -57,9 +59,9 @@ export default function App() {
             </header>
             <footer>
                 <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
-                <Box sx={{ position: 'relative', bottom: 250, left: 1200, right: 0 }} elevation={3}>
-                        <AnemoneHomeView setParentContext={setComponentViewContext}/>
-                </Box>
+                {/* <Box sx={{ position: 'relative', bottom: 250, left: 1200, right: 0 }} elevation={3}>
+                        <Register setParentContext={setComponentViewContext}/>
+                </Box> */}
                     <BottomNavigation
                         showLabels
                         value={componentView}
