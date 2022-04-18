@@ -89,16 +89,14 @@ import { Button, BottomNavigation, BottomNavigationAction, Paper } from "@mui/ma
 import SearchBar from "./components/SearchBar";
 import BookData from "./Data.json";
 import { Box } from '@mui/system';
-
-import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
 import Verification from './components/Verification';
+import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
 
 export default function App() {
     return (
         <div className="App">
             <div className="wrapper">
                 <Routes>
-                    <Route path="/AboutView" element={<AboutView/>}/>
                     <Route path="/AnemoneHomeView" element={<AnemoneHomeView token />}></Route>
                     <Route path="/verify" element={<Verification/>}></Route>
                 </Routes>
