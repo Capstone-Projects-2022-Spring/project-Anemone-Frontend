@@ -1,8 +1,8 @@
 import React, { memo } from 'react';
-import '../vertification.css';
+import '../verification.css';
 import Cancle from '../image/cancle.svg';
 import Icon from '../image/appicon.svg';
-const Vertification = memo(() => {
+const Verification = memo(() => {
   return (
     <div className='container'>
       <div className='content clear-fix'>
@@ -20,4 +20,4 @@ const Vertification = memo(() => {
   )
 })
 
-export default Vertification
+export default Verification
