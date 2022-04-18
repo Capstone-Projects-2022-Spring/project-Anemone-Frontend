@@ -9,7 +9,7 @@ import {Button, BottomNavigation, BottomNavigationAction, Paper} from "@mui/mate
 import SearchBar from "./components/SearchBar";
 import BookData from "./Data.json";
 import { Box } from '@mui/system';
-
+import LoginPage from './components/LoginPage/LoginPage';
 
 AnemoneHomeView.propTypes = {src: PropTypes.string};
 Retrieve.propTypes = {src: PropTypes.string};
@@ -38,6 +38,7 @@ export default function App() {
             setValue('Search')
         }
     }
+ 
 
     function view(value) {
         // eslint-disable-next-line default-case
@@ -46,6 +47,8 @@ export default function App() {
             case 'Search': return <Search goView={test}/>
             case 'Collect': return <Collect/>
             case 'Retrieve': return <Retrieve/>
+            case 1 :return<LoginPage/>
+            break;
             default: return <AboutView/>
         }
     }
@@ -68,6 +71,7 @@ export default function App() {
                         }}
                     >
                         <BottomNavigationAction label="About" icon={<Button />} />
+                        <BottomNavigationAction label="Login" icon={<Button />} />
                     </BottomNavigation>
                 </Paper>
             </footer>
