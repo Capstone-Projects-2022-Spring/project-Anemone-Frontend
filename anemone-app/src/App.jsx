@@ -5,20 +5,22 @@ import AboutView from './AboutView';
 import Collect from './components/Collect';
 import Retrieve from './Retrieve';
 import * as PropTypes from "prop-types";
-import {Button, BottomNavigation, BottomNavigationAction, Paper} from "@mui/material";
+import { Button, BottomNavigation, BottomNavigationAction, Paper } from "@mui/material";
 import SearchBar from "./components/SearchBar";
 import BookData from "./Data.json";
 import { Box } from '@mui/system';
+import Register from "./components/Register";
+import { BrowserRouter, Router, Route, Routes } from 'react-router-dom';
 
 
-AnemoneHomeView.propTypes = {src: PropTypes.string};
-Retrieve.propTypes = {src: PropTypes.string};
-Collect.propTypes = {src: PropTypes.object};
+AnemoneHomeView.propTypes = { src: PropTypes.string };
+Retrieve.propTypes = { src: PropTypes.string };
+Collect.propTypes = { src: PropTypes.object };
 
 
 function Search() {
-    return(
-    <SearchBar placeholder="Enter the key words: " data={BookData} />
+    return (
+        <SearchBar placeholder="Enter the key words: " data={BookData} />
     );
 }
 
@@ -26,15 +28,15 @@ function Search() {
 
 export default function App() {
     const [value, setValue] = React.useState(1);
-    const [componentView, setComponentView] = React.useState('About');
+    const [componentView, setComponentView] = React.useState('Register');
     const setComponentViewContext = (context) => {
         console.log(context);
         setComponentView(context);
     };
 
 
-    function test(name){
-        if(name === 'Search'){
+    function test(name) {
+        if (name === 'Search') {
             setValue('Search')
         }
     }
@@ -42,11 +44,12 @@ export default function App() {
     function view(value) {
         // eslint-disable-next-line default-case
         switch (value) {
-            case 'About': return <AnemoneHomeView/>
-            case 'Search': return <Search goView={test}/>
-            case 'Collect': return <Collect/>
-            case 'Retrieve': return <Retrieve/>
-            default: return <AboutView/>
+            case 'About': return <AnemoneHomeView />
+            case 'Search': return <Search goView={test} />
+            case 'Collect': return <Collect />
+            case 'Retrieve': return <Retrieve />
+            case 'Register': return <Register />
+            default: return <AboutView />
         }
     }
 
@@ -57,9 +60,9 @@ export default function App() {
             </header>
             <footer>
                 <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
-                <Box sx={{ position: 'relative', bottom: 250, left: 1200, right: 0 }} elevation={3}>
-                        <AnemoneHomeView setParentContext={setComponentViewContext}/>
-                </Box>
+                    {/* <Box sx={{ position: 'relative', bottom: 250, left: 1200, right: 0 }} elevation={3}>
+                        <AnemoneHomeView setParentContext={setComponentViewContext} />
+                    </Box> */}
                     <BottomNavigation
                         showLabels
                         value={componentView}
@@ -72,4 +75,5 @@ export default function App() {
                 </Paper>
             </footer>
         </div>
-    )};
+    )
+};
