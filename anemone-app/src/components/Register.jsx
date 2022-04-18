@@ -6,7 +6,6 @@ import axios from 'axios';
 import Anemone from "../image/anemone.png"
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 import { useNavigate } from "react-router-dom";
-
 const Register = () => {
 
 
@@ -87,7 +86,6 @@ const Register = () => {
                         onChange={e => setUser(e.target.value)}
                     />
                 </FormGroup>
-                
                 <p className="text-white"></p>
                 <div >
                     <button className="text-center mb-4" type='submit' onClick={Register} >Register</button>
@@ -97,7 +95,6 @@ const Register = () => {
             </Form>
 
         </div>
-
     );
 }
 
