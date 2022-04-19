@@ -5,6 +5,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import Anemone from "../image/anemone.png"
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
 
@@ -23,9 +24,13 @@ const Register = () => {
     };
 
     async function Register() {
-        let result = await axios.post("http://localhost:8000/api/register", user);
+        let result = await axios.post("http://localhost:8080/api/register", user)
+        .then(function (response) {
+            onInputChange(user)
+            console.log(response);
+          });
         setErrors('Registration Successful')
-        setUser({ name: "", email: "", password: "" }) // To Clear all fields
+        setUser({ name: "", email: "", password1: "", password2: "" }) 
 
     }
 
@@ -82,10 +87,10 @@ const Register = () => {
                         onChange={e => setUser(e.target.value)}
                     />
                 </FormGroup>
-
+                
                 <p className="text-white"></p>
                 <div >
-                    <button className="text-center mb-4" type="submit" onSubmit={Register} >Register</button>
+                    <button className="text-center mb-4" type='submit' onClick={Register} >Register</button>
                 </div>
                 {/* uncomment when login is made */}
                 {/* <Link to="/login" className="text-white ml-5">Have an account?</Link>  */}
