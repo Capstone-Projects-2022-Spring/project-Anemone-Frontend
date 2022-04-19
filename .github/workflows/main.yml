@@ -3,15 +3,10 @@ name: Docker Image CI
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-    if: contains(github.ref == 'refs/heads/production' || github.ref == 'refs/heads/master')
     steps:
       -
         name: Checkout 
