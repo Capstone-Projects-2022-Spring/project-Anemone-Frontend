@@ -22,8 +22,11 @@ COPY ./anemone-app ./
 RUN npm run build
 
 # this next stage is the final deliverable. It is just a simple
-# apache2 server with our built application (build/) being served on port 80.
+# nginx server with our built application (build/) being served on port 80.
 # production stage
-FROM httpd:2.4-alpine as production-stage
-COPY --from=build /app/build /usr/local/apache2/htdocs/
+FROM nginx:alpine
+COPY --from=build /app/build /usr/share/nginx/html
+RUN rm /etc/nginx/conf.d/default.conf
+COPY ./nginx/nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
