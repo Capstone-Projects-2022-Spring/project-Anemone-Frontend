@@ -4,8 +4,8 @@ import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import SearchIcon from '@mui/icons-material/SearchOutlined';
 import SavedSearchIcon from '@mui/icons-material/SavedSearchOutlined';
-import RetrieveBrainIcon from './components/RetrieveBrainIcon';
-import SearchBar from './components/SearchBar';
+import RetrieveBrainIcon from './RetrieveBrainIcon';
+import SearchBar from './SearchBar';
 
 const actions = [
   { icon: <SearchIcon />, name: 'Search' },

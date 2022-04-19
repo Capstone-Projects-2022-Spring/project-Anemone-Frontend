@@ -3,7 +3,7 @@ import AnemoneHomeView from './AnemoneHomeView';
 import * as React from 'react';
 import AboutView from './AboutView';
 import Collect from './components/Collect';
-import Retrieve from './Retrieve';
+import Retrieve from './components/Retrieve';
 import * as PropTypes from "prop-types";
 import { Button, BottomNavigation, BottomNavigationAction, Paper } from "@mui/material";
 import SearchBar from "./components/SearchBar";
