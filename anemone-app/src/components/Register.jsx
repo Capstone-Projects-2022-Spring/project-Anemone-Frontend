@@ -24,7 +24,11 @@ const Register = () => {
     };
 
     async function Register() {
-        let result = await axios.post("http://localhost:8000/api/register", user);
+        let result = await axios.post("http://localhost:8080/api/register", user)
+        .then(function (response) {
+            onInputChange(user)
+            console.log(response);
+          });
         setErrors('Registration Successful')
         setUser({ name: "", email: "", password1: "", password2: "" }) 
 

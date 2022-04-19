@@ -1,26 +1,57 @@
 import './App.css';
-import AnemoneHomeView from './AnemoneHomeView';
+import AnemoneHomeView from './components/AnemoneHomeView';
 import * as React from 'react';
-import AboutView from './AboutView';
+import AboutView from './components/AboutView';
 import Collect from './components/Collect';
 import Retrieve from './components/Retrieve';
+import Register from './components/Register';
 import * as PropTypes from "prop-types";
 import { Button, BottomNavigation, BottomNavigationAction, Paper } from "@mui/material";
 import SearchBar from "./components/SearchBar";
 import BookData from "./Data.json";
-import { Box } from '@mui/system';
-import Register from "./components/Register";
-import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
+// import Verification from './components/Verification';
+import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
+
+AnemoneHomeView.propTypes = { src: PropTypes.string };
+Retrieve.propTypes = { src: PropTypes.string };
+Collect.propTypes = { src: PropTypes.object };
+
+
+
+function Search() {
+    return (
+        <SearchBar placeholder="Enter the key words: " data={BookData} />
+    );
+}
+
+
+
 
 export default function App() {
-    return (
+    function test(name) {
+        if (name === 'Search') {
+            // setValue('Search')
+        }
+    }
+
+    return (<>
+        <Paper sx={{ position: 'fixed', bottom: 200,  right: 300 }} >
+            <AnemoneHomeView token />
+        </Paper>
         <div className="App">
             <div className="wrapper">
-                <Routes>
-                    <Route path="/" element={<Register />} />
-                    <Route path="/AnemoneHomeView" element={<AnemoneHomeView token />}></Route>
-                </Routes>
+                    <Routes>
+                        <Route path="/search" element={<Search token goView={test} />} />
+                        {/*<Route path="/home" element={<AnemoneHomeView token />} />*/}
+                        <Route exact path="/" element={<Search />} />
+                        <Route exact path="/register" element={<Register token />} />
+                        <Route path="/collect" element={<Collect token />} />
+                        {/*<Route path="/retrieve" element={<Retrieve token />} />*/}
+                        <Route path="/about" element={<AboutView token />} />
+                        {/* <Route path="/verify" element={<Verification/>} /> */}
+                    </Routes>
             </div>
         </div>
+        </>
     );
 }

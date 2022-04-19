@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './App.css';
+import '../App.css';
 import Fab from '@mui/material/Fab';
 import IssueCollector from './IssueCollector';
 

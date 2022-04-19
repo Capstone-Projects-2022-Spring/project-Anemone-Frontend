@@ -2,8 +2,8 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import {SpeedDial, Fab} from '@mui/material/';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
-import RainbowBrainIcon from './components/RainbowBrainIcon';
- import Collect from './components/Collect';
+import RainbowBrainIcon from './RainbowBrainIcon';
+ import Collect from './Collect';
 import Retrieve from './Retrieve';
 
 const actions = [
