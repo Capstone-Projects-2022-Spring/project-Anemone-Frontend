@@ -27,6 +27,7 @@ function Verify(){
         <Vertification/>
     );
 }
+
 export default function App() {
     function test(name) {
         if (name === 'Search') {
