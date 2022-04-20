@@ -11,21 +11,18 @@ import SearchBar from "./components/SearchBar";
 import BookData from "./Data.json";
 // import Verification from './components/Verification';
 import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
+import { Box } from '@mui/system';
+import LoginPage from './components/LoginPage/LoginPage';
 
 AnemoneHomeView.propTypes = { src: PropTypes.string };
 Retrieve.propTypes = { src: PropTypes.string };
 Collect.propTypes = { src: PropTypes.object };
-
-
 
 function Search() {
     return (
         <SearchBar placeholder="Enter the key words: " data={BookData} />
     );
 }
-
-
-
 
 export default function App() {
     function test(name) {
@@ -45,6 +42,7 @@ export default function App() {
                         {/*<Route path="/home" element={<AnemoneHomeView token />} />*/}
                         <Route exact path="/" element={<Search />} />
                         <Route exact path="/register" element={<Register token />} />
+                        <Route exact path="/login" element={<LoginPage token />} />
                         <Route path="/collect" element={<Collect token />} />
                         {/*<Route path="/retrieve" element={<Retrieve token />} />*/}
                         <Route path="/about" element={<AboutView token />} />
