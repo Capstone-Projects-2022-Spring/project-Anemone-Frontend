@@ -13,7 +13,7 @@ import BookData from "./Data.json";
 import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
 import { Box } from '@mui/system';
 import LoginPage from './components/LoginPage/LoginPage';
-import Verification from './components/RegisterPage/Verification';
+import Verification from './components/VerificationPage/Verification';
 
 AnemoneHomeView.propTypes = { src: PropTypes.string };
 Retrieve.propTypes = { src: PropTypes.string };
