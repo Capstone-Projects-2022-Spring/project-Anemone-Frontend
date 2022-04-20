@@ -6,7 +6,6 @@ import axios from 'axios';
 import Anemone from "../image/anemone.png"
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 import { useNavigate } from "react-router-dom";
-
 const Register = () => {
 
 
@@ -17,13 +16,13 @@ const Register = () => {
         password1: "",
         password2: ""
     });
-
     const { name, email, password1, password2 } = user;
     const onInputChange = e => {
         setUser({ ...user, [e.target.name]: e.target.value });
     };
-
+    const navigate = useNavigate();
     async function Register() {
+        navigate('/verify');
         let result = await axios.post("http://localhost:8080/api/register", user)
         .then(function (response) {
             onInputChange(user)
@@ -31,7 +30,6 @@ const Register = () => {
           });
         setErrors('Registration Successful')
         setUser({ name: "", email: "", password1: "", password2: "" }) 
-
     }
 
     return (
