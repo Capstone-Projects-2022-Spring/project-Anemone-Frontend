@@ -36,7 +36,7 @@ const Register = () => {
         <div className="wrapper">
             <h3>Anemone Sign Up</h3>
             <section class="section-head">
-                <div class="container">
+                <div class="containers">
                     <div class="imgcontainer">
                         <img src={Anemone} className="Anemone" alt="" />
                     </div>
