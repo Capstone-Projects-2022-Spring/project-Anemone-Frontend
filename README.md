@@ -30,9 +30,9 @@ Builds the app for production to the build folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ## Known Bugs
-The UI was an extra deliverable for Electric Blue Fish Productions, therefore all components are in a draft status. 
-There is no full flushed out data flow.
-Some components such as `Search<-Search Bar<-dummy-data-metadata`, `Register<-Verify`, and `Upload` function in isolated fashions.
-Retrieve->Search does not function.
-All top left buttons on the Search Page are not functional.
-Regster and Login pages do not redirect the user to the home state of the application
+- The UI was an extra deliverable for Electric Blue Fish Productions, therefore all components are in a draft status. 
+- There is no full flushed out data flow.
+- Some components such as `Search<-Search Bar<-dummy-data-metadata`, `Register<-Verify`, and `Upload` function in isolated fashions.
+- Retrieve->Search does not function.
+- All top left buttons on the Search Page are not functional.
+- Regster and Login pages do not redirect the user to the home state of the application
